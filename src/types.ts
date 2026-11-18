@@ -47,8 +47,6 @@ export interface Manifest {
 
 export interface GameSettings {
   groupIds: string[];
-  /** 選んだグループのうち1つだけから出題する(難しい) */
-  singleGroup: boolean;
   pairs: number;
   mode: ImageMode;
   /** ペアの2枚に同じ写真を使う(初心者向け) */

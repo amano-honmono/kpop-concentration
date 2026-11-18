@@ -111,7 +111,7 @@ async function boot(): Promise<void> {
     const saved = loadSettings();
     const groupIds = catalog.manifest.groups.map((g) => g.id);
     return void startGame({
-      groupIds, singleGroup: false, pairs: saved.pairs ?? 6, mode: saved.mode ?? "full", samePhoto: false,
+      groupIds, pairs: saved.pairs ?? 6, mode: saved.mode ?? "full", samePhoto: false,
       ...(new URLSearchParams(location.search).get("mode") === "face" ? { mode: "face" as const } : {}),
     });
   }

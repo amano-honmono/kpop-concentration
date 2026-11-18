@@ -24,7 +24,7 @@ function manifest(): Manifest {
   return { version: 1, generatedAt: "", groups, members, credits: {} };
 }
 
-const base: GameSettings = { groupIds: ["A", "B", "C"], singleGroup: false, pairs: 8, mode: "full", samePhoto: false };
+const base: GameSettings = { groupIds: ["A", "B", "C"], pairs: 8, mode: "full", samePhoto: false };
 
 function pairsOf(cards: { memberId: string; imageKey: string }[]) {
   const byMember = new Map<string, string[]>();
@@ -70,15 +70,6 @@ describe("buildDeck", () => {
     for (const [, keys] of pairsOf(deck.cards)) {
       expect(keys).toHaveLength(4);
       expect(new Set(keys).size).toBe(4);
-    }
-  });
-
-  it("singleGroup では1つのグループだけから出る", () => {
-    for (let seed = 1; seed <= 20; seed++) {
-      const deck = buildDeck(manifest(), { ...base, singleGroup: true, pairs: 8 }, seededRng(seed));
-      const groups = new Set(deck.cards.map((c) => c.memberId[0]));
-      expect(groups.size).toBe(1);
-      expect(deck.groupId).toBeDefined();
     }
   });
 

@@ -51,7 +51,8 @@ export interface BestRecords {
 /** 記録は「グループ・組数・画像モード・難易度」が同じゲームどうしで比べる */
 export function recordKey(s: GameSettings): string {
   const groups = [...s.groupIds].sort().join(",");
-  return [groups, s.singleGroup ? "single" : "mixed", s.pairs, s.mode, s.samePhoto ? "same" : "diff"].join("|");
+  // 2つ目の "mixed" は、削除した「同じグループだけで出題」の名残。これまでの記録を引き継ぐため残している
+  return [groups, "mixed", s.pairs, s.mode, s.samePhoto ? "same" : "diff"].join("|");
 }
 
 export function loadBest(s: GameSettings): BestRecords {

@@ -282,16 +282,6 @@ pre { background: var(--bg); border-radius: 8px; padding: 10px 12px; overflow-x:
 .stat small { font-size: 11px; color: var(--muted); }
 .stat b { font-size: clamp(16px, 4.5vw, 22px); font-variant-numeric: tabular-nums; }
 
-.group-note {
-  align-self: center;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 999px;
-  padding: 2px 12px;
-}
-
 .board-wrap {
   flex: 1;
   min-height: 0;
@@ -394,11 +384,11 @@ pre { background: var(--bg); border-radius: 8px; padding: 10px 12px; overflow-x:
   .label small { display: none; }
 }
 
-.card.is-matched .label, .card.is-miss .label { opacity: 1; transform: none; transition-delay: 0.3s; }
+/* 名前は正解したカードにだけ出す。ミスしたカードは赤い枠と揺れだけ */
+.card.is-matched .label { opacity: 1; transform: none; transition-delay: 0.3s; }
 .card.is-matched .card-front { box-shadow: 0 0 0 3px var(--accent), var(--shadow); }
 .card.is-matched .card-inner { animation: pop 0.5s 0.35s; }
-.card.is-miss .label { background: var(--bad); }
-.card.is-miss .label b, .card.is-miss .label small { color: #fff; }
+.card.is-miss .card-front { box-shadow: 0 0 0 3px var(--bad), var(--shadow); }
 .card.is-miss .card-inner { animation: shake 0.4s 0.45s; }
 
 @keyframes pop {
@@ -432,7 +422,6 @@ pre { background: var(--bg); border-radius: 8px; padding: 10px 12px; overflow-x:
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 .toast.match { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; }
-.toast.miss { background: var(--bad); color: #fff; }
 
 .loading { color: var(--muted); }
 

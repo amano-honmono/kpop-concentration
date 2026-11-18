@@ -22,8 +22,6 @@ export interface Deck {
   cards: Card[];
   /** 出題したメンバー(重複なし・出題順) */
   memberIds: string[];
-  /** singleGroup のときに選ばれたグループ */
-  groupId?: string;
 }
 
 /** 候補のメンバーから n 人を選ぶ。既定はランダム */
@@ -51,10 +49,6 @@ export function membersOf(manifest: Manifest, groupIds: readonly string[]): Mani
 /** この設定で遊べるか(遊べないときは理由を返す) */
 export function checkSettings(manifest: Manifest, s: GameSettings): string | null {
   if (s.groupIds.length === 0) return "グループを1つ以上選んでください";
-  if (s.singleGroup) {
-    const ok = s.groupIds.some((g) => maxPairs(membersOf(manifest, [g]), s.samePhoto) >= s.pairs);
-    return ok ? null : `${s.pairs}組を1つのグループだけで作れるグループがありません`;
-  }
   const max = maxPairs(membersOf(manifest, s.groupIds), s.samePhoto);
   return max >= s.pairs ? null : `選んだグループでは最大 ${max} 組までです`;
 }
@@ -86,18 +80,8 @@ export function buildDeck(
   const problem = checkSettings(manifest, s);
   if (problem) throw new DeckError(problem);
 
-  let groupId: string | undefined;
-  let pool: ManifestMember[];
-  if (s.singleGroup) {
-    const candidates = s.groupIds.filter((g) => maxPairs(membersOf(manifest, [g]), s.samePhoto) >= s.pairs);
-    groupId = shuffle(candidates, rng)[0];
-    pool = membersOf(manifest, [groupId]);
-  } else {
-    pool = membersOf(manifest, s.groupIds);
-  }
-
   // 組数がメンバー数以下なら picker で選んだ人を1組ずつ。多ければ全員を使って割り振る
-  pool = pool.filter((m) => pairCapacity(m, s.samePhoto) > 0);
+  const pool = membersOf(manifest, s.groupIds).filter((m) => pairCapacity(m, s.samePhoto) > 0);
   const chosen = s.pairs <= pool.length ? picker(pool, s.pairs, rng) : pool;
   const counts = allocate(chosen, s.pairs, s.samePhoto, rng);
 
@@ -119,6 +103,5 @@ export function buildDeck(
   return {
     cards: shuffle(cards, rng),
     memberIds: [...counts.keys()].map((m) => m.id),
-    groupId,
   };
 }

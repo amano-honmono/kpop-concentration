@@ -81,11 +81,11 @@ export async function renderGame(root: HTMLElement, opts: GameScreenOptions): Pr
   }
 
   let toastTimer = 0;
-  function say(content: (Node | string)[], kind: "match" | "miss"): void {
+  function say(content: (Node | string)[]): void {
     toast.replaceChildren(...content);
-    toast.className = `toast show ${kind}`;
+    toast.className = "toast show match";
     clearTimeout(toastTimer);
-    toastTimer = window.setTimeout(() => { toast.className = "toast"; }, kind === "miss" ? MISS_SHOW_MS : 1800);
+    toastTimer = window.setTimeout(() => { toast.className = "toast"; }, 1800);
   }
 
   const name = (id: string) => catalog.member(id).name.ja;
@@ -105,13 +105,12 @@ export async function renderGame(root: HTMLElement, opts: GameScreenOptions): Pr
           el.setAttribute("aria-label", `${name(c.memberId)}(ペア成立)`);
         }
         const m = catalog.member(e.cards[0].memberId);
-        say([h("b", {}, m.name.ja), ` ${m.name.en} · ${catalog.groupName(m.group)}`], "match");
+        say([h("b", {}, m.name.ja), ` ${m.name.en} · ${catalog.groupName(m.group)}`]);
         break;
       }
       case "miss": {
+        // 名前は正解するまで出さない(赤い枠と揺れでミスを知らせるだけ)
         for (const c of e.cards) cardEls.get(c.uid)!.classList.add("is-miss");
-        const [a, b] = e.cards;
-        say([h("b", {}, name(a.memberId)), " と ", h("b", {}, name(b.memberId)), " でした"], "miss");
         missTimer = window.setTimeout(() => game.hideMiss(), MISS_SHOW_MS);
         break;
       }
@@ -137,13 +136,11 @@ export async function renderGame(root: HTMLElement, opts: GameScreenOptions): Pr
   }, 250);
   cleanups.push(() => { clearInterval(ticker); clearTimeout(missTimer); clearTimeout(toastTimer); });
 
-  const groupNote = game.deck.groupId ? h("span", { class: "group-note" }, catalog.groupName(game.deck.groupId)) : null;
   root.replaceChildren(h("div", { class: "screen game" },
     h("header", { class: "hud" },
       h("button", { type: "button", class: "btn ghost small", onclick: opts.onQuit }, "やめる"),
       h("div", { class: "stats" }, moves.el, misses.el, time.el, pairs.el),
       h("button", { type: "button", class: "btn ghost small", onclick: opts.onRetry }, "やり直す")),
-    groupNote,
     h("div", { class: "board-wrap" }, board),
     toast));
   refreshStats();

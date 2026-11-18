@@ -16,7 +16,6 @@ function initialSettings(catalog: Catalog): GameSettings {
   const groupIds = (saved.groupIds ?? []).filter((g) => known.has(g));
   return {
     groupIds: groupIds.length ? groupIds : [...known],
-    singleGroup: saved.singleGroup ?? false,
     pairs: saved.pairs && (PAIR_OPTIONS as readonly number[]).includes(saved.pairs) ? saved.pairs : 8,
     mode: saved.mode === "face" ? "face" : "full",
     samePhoto: saved.samePhoto ?? false,
@@ -32,7 +31,6 @@ export function renderSettings(root: HTMLElement, opts: SettingsScreenOptions): 
   const groupList = h("div", { class: "chips" });
   const pairList = h("div", { class: "segmented", role: "radiogroup", "aria-label": "ペアの数" });
   const modeList = h("div", { class: "modes", role: "radiogroup", "aria-label": "画像" });
-  const singleToggle = h("input", { type: "checkbox", id: "single" });
   const sameToggle = h("input", { type: "checkbox", id: "same" });
   const best = h("p", { class: "best" });
   const problem = h("p", { class: "problem", role: "alert" });
@@ -42,7 +40,6 @@ export function renderSettings(root: HTMLElement, opts: SettingsScreenOptions): 
   const sample = manifest.members[0]?.images[0];
 
   function update(): void {
-    singleToggle.checked = s.singleGroup;
     sameToggle.checked = s.samePhoto;
 
     groupList.replaceChildren(...manifest.groups.map((g) => {
@@ -57,10 +54,7 @@ export function renderSettings(root: HTMLElement, opts: SettingsScreenOptions): 
       }, h("span", { class: "chip-name" }, g.name.en), h("span", { class: "chip-count" }, `${count}人`));
     }));
 
-    const pool = membersOf(manifest, s.groupIds);
-    const limit = s.singleGroup
-      ? Math.max(0, ...s.groupIds.map((g) => maxPairs(membersOf(manifest, [g]), s.samePhoto)))
-      : maxPairs(pool, s.samePhoto);
+    const limit = maxPairs(membersOf(manifest, s.groupIds), s.samePhoto);
     // 選んでいる組数が作れないときは、作れる中で一番多い組数にする
     if (s.pairs > limit) {
       const fit = PAIR_OPTIONS.filter((n) => n <= limit);
@@ -96,13 +90,8 @@ export function renderSettings(root: HTMLElement, opts: SettingsScreenOptions): 
       ? ["この設定のベスト: ", h("b", {}, formatTime(b.fastest.timeMs)), " / ",
         h("b", {}, `${b.fewestMoves?.moves ?? b.fastest.moves}手`)]
       : [err ? "" : "この設定ではまだ記録がありません"]));
-    // 「同じグループだけ」のときは、どのグループが選ばれるかを補足する
-    if (!err && s.singleGroup && pool.length) {
-      best.append(h("br"), h("small", {}, "選んだグループの中から1つを毎回ランダムに選びます"));
-    }
   }
 
-  singleToggle.addEventListener("change", () => { s.singleGroup = singleToggle.checked; update(); });
   sameToggle.addEventListener("change", () => { s.samePhoto = sameToggle.checked; update(); });
   start.addEventListener("click", () => {
     if (checkSettings(manifest, s)) return;
@@ -122,9 +111,7 @@ export function renderSettings(root: HTMLElement, opts: SettingsScreenOptions): 
           h("span", { class: "links" },
             h("button", { type: "button", class: "link", onclick: () => { s.groupIds = manifest.groups.map((g) => g.id); update(); } }, "すべて選ぶ"),
             h("button", { type: "button", class: "link", onclick: () => { s.groupIds = []; update(); } }, "すべて外す"))),
-        groupList,
-        h("label", { class: "toggle", for: "single" }, singleToggle,
-          h("span", {}, "同じグループのメンバーだけで出題", h("small", {}, "似た雰囲気のメンバーどうしなのでむずかしい")))),
+        groupList),
       h("div", { class: "field" }, h("h2", {}, "ペアの数"), pairList),
       h("div", { class: "field" }, h("h2", {}, "画像"), modeList),
       h("div", { class: "field" },
