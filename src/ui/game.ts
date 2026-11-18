@@ -151,8 +151,12 @@ export async function renderGame(root: HTMLElement, opts: GameScreenOptions): Pr
   // 盤面の大きさに合わせて列数とカードの大きさを決める
   const wrap = board.parentElement!;
   const layout = () => {
-    const gap = wrap.clientWidth < 480 ? 6 : 10;
-    const { cols, size } = bestColumns(game.cards.length, wrap.clientWidth, wrap.clientHeight, gap);
+    // clientWidth / clientHeight は余白(padding)を含むので、その分を引く
+    const cs = getComputedStyle(wrap);
+    const width = wrap.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const height = wrap.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    const gap = width < 480 ? 6 : 10;
+    const { cols, size } = bestColumns(game.cards.length, width, height, gap);
     board.style.setProperty("--cols", String(cols));
     board.style.setProperty("--card", `${Math.floor(Math.min(size, MAX_CARD_PX))}px`);
     board.style.setProperty("--gap", `${gap}px`);

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-18T14:39:58+09:00",
+ "generatedAt": "2026-11-18T18:41:42+09:00",
  "groups": [
   {
    "id": "blackpink",
@@ -11,7 +11,10 @@
    },
    "aliases": [],
    "members": [
-    "blackpink-jisoo"
+    "blackpink-jisoo",
+    "blackpink-jennie",
+    "blackpink-rose",
+    "blackpink-lisa"
    ]
   },
   {
@@ -23,7 +26,47 @@
    },
    "aliases": [],
    "members": [
-    "twice-nayeon"
+    "twice-nayeon",
+    "twice-jeongyeon",
+    "twice-momo",
+    "twice-sana",
+    "twice-jihyo",
+    "twice-mina",
+    "twice-dahyun",
+    "twice-chaeyoung",
+    "twice-tzuyu"
+   ]
+  },
+  {
+   "id": "aespa",
+   "name": {
+    "ja": "エスパ",
+    "en": "aespa",
+    "ko": "에스파"
+   },
+   "aliases": [],
+   "members": [
+    "aespa-karina",
+    "aespa-giselle",
+    "aespa-winter",
+    "aespa-ningning"
+   ]
+  },
+  {
+   "id": "ive",
+   "name": {
+    "ja": "アイヴ",
+    "en": "IVE",
+    "ko": "아이브"
+   },
+   "aliases": [],
+   "members": [
+    "ive-yujin",
+    "ive-gaeul",
+    "ive-rei",
+    "ive-wonyoung",
+    "ive-liz",
+    "ive-leeseo"
    ]
   },
   {
@@ -35,7 +78,44 @@
    },
    "aliases": [],
    "members": [
-    "lesserafim-chaewon"
+    "lesserafim-chaewon",
+    "lesserafim-sakura",
+    "lesserafim-yunjin",
+    "lesserafim-kazuha",
+    "lesserafim-eunchae"
+   ]
+  },
+  {
+   "id": "idle",
+   "name": {
+    "ja": "アイドゥル",
+    "en": "i-dle",
+    "ko": "아이들"
+   },
+   "aliases": [
+    "(G)I-DLE"
+   ],
+   "members": [
+    "idle-miyeon",
+    "idle-minnie",
+    "idle-soyeon",
+    "idle-yuqi",
+    "idle-shuhua"
+   ]
+  },
+  {
+   "id": "newjeans",
+   "name": {
+    "ja": "ニュージーンズ",
+    "en": "NewJeans",
+    "ko": "뉴진스"
+   },
+   "aliases": [],
+   "members": [
+    "newjeans-minji",
+    "newjeans-hanni",
+    "newjeans-haerin",
+    "newjeans-hyein"
    ]
   }
  ],
@@ -50,34 +130,157 @@
    },
    "images": [
     {
-     "key": "commons-88913578",
+     "key": "commons-91348029",
      "full": "cards/blackpink-jisoo/1_full.webp",
      "face": "cards/blackpink-jisoo/1_face.webp",
-     "credit": "blackpink-jisoo/commons-88913578"
-    },
-    {
-     "key": "commons-91348029",
-     "full": "cards/blackpink-jisoo/2_full.webp",
-     "face": "cards/blackpink-jisoo/2_face.webp",
      "credit": "blackpink-jisoo/commons-91348029"
     },
     {
      "key": "commons-96558967",
-     "full": "cards/blackpink-jisoo/3_full.webp",
-     "face": "cards/blackpink-jisoo/3_face.webp",
+     "full": "cards/blackpink-jisoo/2_full.webp",
+     "face": "cards/blackpink-jisoo/2_face.webp",
      "credit": "blackpink-jisoo/commons-96558967"
     },
     {
-     "key": "commons-79087776",
+     "key": "commons-88913573",
+     "full": "cards/blackpink-jisoo/3_full.webp",
+     "face": "cards/blackpink-jisoo/3_face.webp",
+     "credit": "blackpink-jisoo/commons-88913573"
+    },
+    {
+     "key": "commons-79087769",
      "full": "cards/blackpink-jisoo/4_full.webp",
      "face": "cards/blackpink-jisoo/4_face.webp",
-     "credit": "blackpink-jisoo/commons-79087776"
+     "credit": "blackpink-jisoo/commons-79087769"
     },
     {
      "key": "commons-91348025",
      "full": "cards/blackpink-jisoo/5_full.webp",
      "face": "cards/blackpink-jisoo/5_face.webp",
      "credit": "blackpink-jisoo/commons-91348025"
+    }
+   ]
+  },
+  {
+   "id": "blackpink-jennie",
+   "group": "blackpink",
+   "name": {
+    "ja": "ジェニー",
+    "en": "Jennie",
+    "ko": "제니"
+   },
+   "images": [
+    {
+     "key": "commons-79087178",
+     "full": "cards/blackpink-jennie/1_full.webp",
+     "face": "cards/blackpink-jennie/1_face.webp",
+     "credit": "blackpink-jennie/commons-79087178"
+    },
+    {
+     "key": "commons-91320479",
+     "full": "cards/blackpink-jennie/2_full.webp",
+     "face": "cards/blackpink-jennie/2_face.webp",
+     "credit": "blackpink-jennie/commons-91320479"
+    },
+    {
+     "key": "commons-193109107",
+     "full": "cards/blackpink-jennie/3_full.webp",
+     "face": "cards/blackpink-jennie/3_face.webp",
+     "credit": "blackpink-jennie/commons-193109107"
+    },
+    {
+     "key": "commons-104630103",
+     "full": "cards/blackpink-jennie/4_full.webp",
+     "face": "cards/blackpink-jennie/4_face.webp",
+     "credit": "blackpink-jennie/commons-104630103"
+    },
+    {
+     "key": "commons-91870914",
+     "full": "cards/blackpink-jennie/5_full.webp",
+     "face": "cards/blackpink-jennie/5_face.webp",
+     "credit": "blackpink-jennie/commons-91870914"
+    }
+   ]
+  },
+  {
+   "id": "blackpink-rose",
+   "group": "blackpink",
+   "name": {
+    "ja": "ロゼ",
+    "en": "Rosé",
+    "ko": "로제"
+   },
+   "images": [
+    {
+     "key": "commons-123818011",
+     "full": "cards/blackpink-rose/1_full.webp",
+     "face": "cards/blackpink-rose/1_face.webp",
+     "credit": "blackpink-rose/commons-123818011"
+    },
+    {
+     "key": "commons-147415087",
+     "full": "cards/blackpink-rose/2_full.webp",
+     "face": "cards/blackpink-rose/2_face.webp",
+     "credit": "blackpink-rose/commons-147415087"
+    },
+    {
+     "key": "commons-75621534",
+     "full": "cards/blackpink-rose/3_full.webp",
+     "face": "cards/blackpink-rose/3_face.webp",
+     "credit": "blackpink-rose/commons-75621534"
+    },
+    {
+     "key": "commons-63223625",
+     "full": "cards/blackpink-rose/4_full.webp",
+     "face": "cards/blackpink-rose/4_face.webp",
+     "credit": "blackpink-rose/commons-63223625"
+    },
+    {
+     "key": "commons-114800769",
+     "full": "cards/blackpink-rose/5_full.webp",
+     "face": "cards/blackpink-rose/5_face.webp",
+     "credit": "blackpink-rose/commons-114800769"
+    }
+   ]
+  },
+  {
+   "id": "blackpink-lisa",
+   "group": "blackpink",
+   "name": {
+    "ja": "リサ",
+    "en": "Lisa",
+    "ko": "리사"
+   },
+   "images": [
+    {
+     "key": "commons-165861851",
+     "full": "cards/blackpink-lisa/1_full.webp",
+     "face": "cards/blackpink-lisa/1_face.webp",
+     "credit": "blackpink-lisa/commons-165861851"
+    },
+    {
+     "key": "commons-147725494",
+     "full": "cards/blackpink-lisa/2_full.webp",
+     "face": "cards/blackpink-lisa/2_face.webp",
+     "credit": "blackpink-lisa/commons-147725494"
+    },
+    {
+     "key": "commons-140136718",
+     "full": "cards/blackpink-lisa/3_full.webp",
+     "face": "cards/blackpink-lisa/3_face.webp",
+     "credit": "blackpink-lisa/commons-140136718"
+    },
+    {
+     "key": "commons-175311721",
+     "full": "cards/blackpink-lisa/4_full.webp",
+     "face": "cards/blackpink-lisa/4_face.webp",
+     "credit": "blackpink-lisa/commons-175311721"
+    },
+    {
+     "key": "commons-124522819",
+     "full": "cards/blackpink-lisa/5_full.webp",
+     "face": "cards/blackpink-lisa/5_face.webp",
+     "credit": "blackpink-lisa/commons-124522819"
     }
    ]
   },
@@ -109,16 +312,754 @@
      "credit": "twice-nayeon/commons-48760915"
     },
     {
-     "key": "commons-95562560",
+     "key": "commons-118253171",
      "full": "cards/twice-nayeon/4_full.webp",
      "face": "cards/twice-nayeon/4_face.webp",
-     "credit": "twice-nayeon/commons-95562560"
+     "credit": "twice-nayeon/commons-118253171"
     },
     {
-     "key": "commons-50833473",
+     "key": "commons-70564233",
      "full": "cards/twice-nayeon/5_full.webp",
      "face": "cards/twice-nayeon/5_face.webp",
-     "credit": "twice-nayeon/commons-50833473"
+     "credit": "twice-nayeon/commons-70564233"
+    }
+   ]
+  },
+  {
+   "id": "twice-jeongyeon",
+   "group": "twice",
+   "name": {
+    "ja": "ジョンヨン",
+    "en": "Jeongyeon",
+    "ko": "정연"
+   },
+   "images": [
+    {
+     "key": "commons-150182206",
+     "full": "cards/twice-jeongyeon/1_full.webp",
+     "face": "cards/twice-jeongyeon/1_face.webp",
+     "credit": "twice-jeongyeon/commons-150182206"
+    },
+    {
+     "key": "commons-114873255",
+     "full": "cards/twice-jeongyeon/2_full.webp",
+     "face": "cards/twice-jeongyeon/2_face.webp",
+     "credit": "twice-jeongyeon/commons-114873255"
+    },
+    {
+     "key": "commons-118042590",
+     "full": "cards/twice-jeongyeon/3_full.webp",
+     "face": "cards/twice-jeongyeon/3_face.webp",
+     "credit": "twice-jeongyeon/commons-118042590"
+    },
+    {
+     "key": "commons-159966300",
+     "full": "cards/twice-jeongyeon/4_full.webp",
+     "face": "cards/twice-jeongyeon/4_face.webp",
+     "credit": "twice-jeongyeon/commons-159966300"
+    },
+    {
+     "key": "commons-59347782",
+     "full": "cards/twice-jeongyeon/5_full.webp",
+     "face": "cards/twice-jeongyeon/5_face.webp",
+     "credit": "twice-jeongyeon/commons-59347782"
+    }
+   ]
+  },
+  {
+   "id": "twice-momo",
+   "group": "twice",
+   "name": {
+    "ja": "モモ",
+    "en": "Momo",
+    "ko": "모모"
+   },
+   "images": [
+    {
+     "key": "commons-137818712",
+     "full": "cards/twice-momo/1_full.webp",
+     "face": "cards/twice-momo/1_face.webp",
+     "credit": "twice-momo/commons-137818712"
+    },
+    {
+     "key": "commons-73082625",
+     "full": "cards/twice-momo/2_full.webp",
+     "face": "cards/twice-momo/2_face.webp",
+     "credit": "twice-momo/commons-73082625"
+    },
+    {
+     "key": "commons-134389189",
+     "full": "cards/twice-momo/3_full.webp",
+     "face": "cards/twice-momo/3_face.webp",
+     "credit": "twice-momo/commons-134389189"
+    },
+    {
+     "key": "commons-136106211",
+     "full": "cards/twice-momo/4_full.webp",
+     "face": "cards/twice-momo/4_face.webp",
+     "credit": "twice-momo/commons-136106211"
+    },
+    {
+     "key": "commons-118042616",
+     "full": "cards/twice-momo/5_full.webp",
+     "face": "cards/twice-momo/5_face.webp",
+     "credit": "twice-momo/commons-118042616"
+    }
+   ]
+  },
+  {
+   "id": "twice-sana",
+   "group": "twice",
+   "name": {
+    "ja": "サナ",
+    "en": "Sana",
+    "ko": "사나"
+   },
+   "images": [
+    {
+     "key": "commons-113832748",
+     "full": "cards/twice-sana/1_full.webp",
+     "face": "cards/twice-sana/1_face.webp",
+     "credit": "twice-sana/commons-113832748"
+    },
+    {
+     "key": "commons-50349584",
+     "full": "cards/twice-sana/2_full.webp",
+     "face": "cards/twice-sana/2_face.webp",
+     "credit": "twice-sana/commons-50349584"
+    },
+    {
+     "key": "commons-56706759",
+     "full": "cards/twice-sana/3_full.webp",
+     "face": "cards/twice-sana/3_face.webp",
+     "credit": "twice-sana/commons-56706759"
+    },
+    {
+     "key": "commons-63777159",
+     "full": "cards/twice-sana/4_full.webp",
+     "face": "cards/twice-sana/4_face.webp",
+     "credit": "twice-sana/commons-63777159"
+    },
+    {
+     "key": "commons-60582369",
+     "full": "cards/twice-sana/5_full.webp",
+     "face": "cards/twice-sana/5_face.webp",
+     "credit": "twice-sana/commons-60582369"
+    }
+   ]
+  },
+  {
+   "id": "twice-jihyo",
+   "group": "twice",
+   "name": {
+    "ja": "ジヒョ",
+    "en": "Jihyo",
+    "ko": "지효"
+   },
+   "images": [
+    {
+     "key": "commons-115595972",
+     "full": "cards/twice-jihyo/1_full.webp",
+     "face": "cards/twice-jihyo/1_face.webp",
+     "credit": "twice-jihyo/commons-115595972"
+    },
+    {
+     "key": "commons-198412066",
+     "full": "cards/twice-jihyo/2_full.webp",
+     "face": "cards/twice-jihyo/2_face.webp",
+     "credit": "twice-jihyo/commons-198412066"
+    },
+    {
+     "key": "commons-195149416",
+     "full": "cards/twice-jihyo/3_full.webp",
+     "face": "cards/twice-jihyo/3_face.webp",
+     "credit": "twice-jihyo/commons-195149416"
+    },
+    {
+     "key": "commons-136633869",
+     "full": "cards/twice-jihyo/4_full.webp",
+     "face": "cards/twice-jihyo/4_face.webp",
+     "credit": "twice-jihyo/commons-136633869"
+    },
+    {
+     "key": "commons-118042593",
+     "full": "cards/twice-jihyo/5_full.webp",
+     "face": "cards/twice-jihyo/5_face.webp",
+     "credit": "twice-jihyo/commons-118042593"
+    }
+   ]
+  },
+  {
+   "id": "twice-mina",
+   "group": "twice",
+   "name": {
+    "ja": "ミナ",
+    "en": "Mina",
+    "ko": "미나"
+   },
+   "images": [
+    {
+     "key": "commons-117089816",
+     "full": "cards/twice-mina/1_full.webp",
+     "face": "cards/twice-mina/1_face.webp",
+     "credit": "twice-mina/commons-117089816"
+    },
+    {
+     "key": "commons-132503540",
+     "full": "cards/twice-mina/2_full.webp",
+     "face": "cards/twice-mina/2_face.webp",
+     "credit": "twice-mina/commons-132503540"
+    },
+    {
+     "key": "commons-144964711",
+     "full": "cards/twice-mina/3_full.webp",
+     "face": "cards/twice-mina/3_face.webp",
+     "credit": "twice-mina/commons-144964711"
+    },
+    {
+     "key": "commons-144964550",
+     "full": "cards/twice-mina/4_full.webp",
+     "face": "cards/twice-mina/4_face.webp",
+     "credit": "twice-mina/commons-144964550"
+    },
+    {
+     "key": "commons-118491009",
+     "full": "cards/twice-mina/5_full.webp",
+     "face": "cards/twice-mina/5_face.webp",
+     "credit": "twice-mina/commons-118491009"
+    }
+   ]
+  },
+  {
+   "id": "twice-dahyun",
+   "group": "twice",
+   "name": {
+    "ja": "ダヒョン",
+    "en": "Dahyun",
+    "ko": "다현"
+   },
+   "images": [
+    {
+     "key": "commons-59347784",
+     "full": "cards/twice-dahyun/1_full.webp",
+     "face": "cards/twice-dahyun/1_face.webp",
+     "credit": "twice-dahyun/commons-59347784"
+    },
+    {
+     "key": "commons-160150332",
+     "full": "cards/twice-dahyun/2_full.webp",
+     "face": "cards/twice-dahyun/2_face.webp",
+     "credit": "twice-dahyun/commons-160150332"
+    },
+    {
+     "key": "commons-118491007",
+     "full": "cards/twice-dahyun/3_full.webp",
+     "face": "cards/twice-dahyun/3_face.webp",
+     "credit": "twice-dahyun/commons-118491007"
+    },
+    {
+     "key": "commons-118253165",
+     "full": "cards/twice-dahyun/4_full.webp",
+     "face": "cards/twice-dahyun/4_face.webp",
+     "credit": "twice-dahyun/commons-118253165"
+    },
+    {
+     "key": "commons-160150330",
+     "full": "cards/twice-dahyun/5_full.webp",
+     "face": "cards/twice-dahyun/5_face.webp",
+     "credit": "twice-dahyun/commons-160150330"
+    }
+   ]
+  },
+  {
+   "id": "twice-chaeyoung",
+   "group": "twice",
+   "name": {
+    "ja": "チェヨン",
+    "en": "Chaeyoung",
+    "ko": "채영"
+   },
+   "images": [
+    {
+     "key": "commons-113832943",
+     "full": "cards/twice-chaeyoung/1_full.webp",
+     "face": "cards/twice-chaeyoung/1_face.webp",
+     "credit": "twice-chaeyoung/commons-113832943"
+    },
+    {
+     "key": "commons-70571042",
+     "full": "cards/twice-chaeyoung/2_full.webp",
+     "face": "cards/twice-chaeyoung/2_face.webp",
+     "credit": "twice-chaeyoung/commons-70571042"
+    },
+    {
+     "key": "commons-118042595",
+     "full": "cards/twice-chaeyoung/3_full.webp",
+     "face": "cards/twice-chaeyoung/3_face.webp",
+     "credit": "twice-chaeyoung/commons-118042595"
+    },
+    {
+     "key": "commons-76542104",
+     "full": "cards/twice-chaeyoung/4_full.webp",
+     "face": "cards/twice-chaeyoung/4_face.webp",
+     "credit": "twice-chaeyoung/commons-76542104"
+    },
+    {
+     "key": "commons-118253164",
+     "full": "cards/twice-chaeyoung/5_full.webp",
+     "face": "cards/twice-chaeyoung/5_face.webp",
+     "credit": "twice-chaeyoung/commons-118253164"
+    }
+   ]
+  },
+  {
+   "id": "twice-tzuyu",
+   "group": "twice",
+   "name": {
+    "ja": "ツウィ",
+    "en": "Tzuyu",
+    "ko": "쯔위"
+   },
+   "images": [
+    {
+     "key": "commons-128531476",
+     "full": "cards/twice-tzuyu/1_full.webp",
+     "face": "cards/twice-tzuyu/1_face.webp",
+     "credit": "twice-tzuyu/commons-128531476"
+    },
+    {
+     "key": "commons-58124431",
+     "full": "cards/twice-tzuyu/2_full.webp",
+     "face": "cards/twice-tzuyu/2_face.webp",
+     "credit": "twice-tzuyu/commons-58124431"
+    },
+    {
+     "key": "commons-134384855",
+     "full": "cards/twice-tzuyu/3_full.webp",
+     "face": "cards/twice-tzuyu/3_face.webp",
+     "credit": "twice-tzuyu/commons-134384855"
+    },
+    {
+     "key": "commons-60581918",
+     "full": "cards/twice-tzuyu/4_full.webp",
+     "face": "cards/twice-tzuyu/4_face.webp",
+     "credit": "twice-tzuyu/commons-60581918"
+    },
+    {
+     "key": "commons-47392634",
+     "full": "cards/twice-tzuyu/5_full.webp",
+     "face": "cards/twice-tzuyu/5_face.webp",
+     "credit": "twice-tzuyu/commons-47392634"
+    }
+   ]
+  },
+  {
+   "id": "aespa-karina",
+   "group": "aespa",
+   "name": {
+    "ja": "カリナ",
+    "en": "Karina",
+    "ko": "카리나"
+   },
+   "images": [
+    {
+     "key": "commons-141563889",
+     "full": "cards/aespa-karina/1_full.webp",
+     "face": "cards/aespa-karina/1_face.webp",
+     "credit": "aespa-karina/commons-141563889"
+    },
+    {
+     "key": "commons-130128060",
+     "full": "cards/aespa-karina/2_full.webp",
+     "face": "cards/aespa-karina/2_face.webp",
+     "credit": "aespa-karina/commons-130128060"
+    },
+    {
+     "key": "commons-156323091",
+     "full": "cards/aespa-karina/3_full.webp",
+     "face": "cards/aespa-karina/3_face.webp",
+     "credit": "aespa-karina/commons-156323091"
+    },
+    {
+     "key": "commons-142076689",
+     "full": "cards/aespa-karina/4_full.webp",
+     "face": "cards/aespa-karina/4_face.webp",
+     "credit": "aespa-karina/commons-142076689"
+    },
+    {
+     "key": "commons-163894136",
+     "full": "cards/aespa-karina/5_full.webp",
+     "face": "cards/aespa-karina/5_face.webp",
+     "credit": "aespa-karina/commons-163894136"
+    }
+   ]
+  },
+  {
+   "id": "aespa-giselle",
+   "group": "aespa",
+   "name": {
+    "ja": "ジゼル",
+    "en": "Giselle",
+    "ko": "지젤"
+   },
+   "images": [
+    {
+     "key": "commons-163607495",
+     "full": "cards/aespa-giselle/1_full.webp",
+     "face": "cards/aespa-giselle/1_face.webp",
+     "credit": "aespa-giselle/commons-163607495"
+    },
+    {
+     "key": "commons-164862754",
+     "full": "cards/aespa-giselle/2_full.webp",
+     "face": "cards/aespa-giselle/2_face.webp",
+     "credit": "aespa-giselle/commons-164862754"
+    },
+    {
+     "key": "commons-150003437",
+     "full": "cards/aespa-giselle/3_full.webp",
+     "face": "cards/aespa-giselle/3_face.webp",
+     "credit": "aespa-giselle/commons-150003437"
+    },
+    {
+     "key": "commons-153722981",
+     "full": "cards/aespa-giselle/4_full.webp",
+     "face": "cards/aespa-giselle/4_face.webp",
+     "credit": "aespa-giselle/commons-153722981"
+    },
+    {
+     "key": "commons-130128253",
+     "full": "cards/aespa-giselle/5_full.webp",
+     "face": "cards/aespa-giselle/5_face.webp",
+     "credit": "aespa-giselle/commons-130128253"
+    }
+   ]
+  },
+  {
+   "id": "aespa-winter",
+   "group": "aespa",
+   "name": {
+    "ja": "ウィンター",
+    "en": "Winter",
+    "ko": "윈터"
+   },
+   "images": [
+    {
+     "key": "commons-141563893",
+     "full": "cards/aespa-winter/1_full.webp",
+     "face": "cards/aespa-winter/1_face.webp",
+     "credit": "aespa-winter/commons-141563893"
+    },
+    {
+     "key": "commons-184579102",
+     "full": "cards/aespa-winter/2_full.webp",
+     "face": "cards/aespa-winter/2_face.webp",
+     "credit": "aespa-winter/commons-184579102"
+    },
+    {
+     "key": "commons-184581569",
+     "full": "cards/aespa-winter/3_full.webp",
+     "face": "cards/aespa-winter/3_face.webp",
+     "credit": "aespa-winter/commons-184581569"
+    },
+    {
+     "key": "commons-203049673",
+     "full": "cards/aespa-winter/4_full.webp",
+     "face": "cards/aespa-winter/4_face.webp",
+     "credit": "aespa-winter/commons-203049673"
+    },
+    {
+     "key": "commons-184581564",
+     "full": "cards/aespa-winter/5_full.webp",
+     "face": "cards/aespa-winter/5_face.webp",
+     "credit": "aespa-winter/commons-184581564"
+    }
+   ]
+  },
+  {
+   "id": "aespa-ningning",
+   "group": "aespa",
+   "name": {
+    "ja": "ニンニン",
+    "en": "Ningning",
+    "ko": "닝닝"
+   },
+   "images": [
+    {
+     "key": "commons-202738105",
+     "full": "cards/aespa-ningning/1_full.webp",
+     "face": "cards/aespa-ningning/1_face.webp",
+     "credit": "aespa-ningning/commons-202738105"
+    },
+    {
+     "key": "commons-198409990",
+     "full": "cards/aespa-ningning/2_full.webp",
+     "face": "cards/aespa-ningning/2_face.webp",
+     "credit": "aespa-ningning/commons-198409990"
+    },
+    {
+     "key": "commons-141535511",
+     "full": "cards/aespa-ningning/3_full.webp",
+     "face": "cards/aespa-ningning/3_face.webp",
+     "credit": "aespa-ningning/commons-141535511"
+    },
+    {
+     "key": "commons-184579099",
+     "full": "cards/aespa-ningning/4_full.webp",
+     "face": "cards/aespa-ningning/4_face.webp",
+     "credit": "aespa-ningning/commons-184579099"
+    },
+    {
+     "key": "commons-185310886",
+     "full": "cards/aespa-ningning/5_full.webp",
+     "face": "cards/aespa-ningning/5_face.webp",
+     "credit": "aespa-ningning/commons-185310886"
+    }
+   ]
+  },
+  {
+   "id": "ive-yujin",
+   "group": "ive",
+   "name": {
+    "ja": "ユジン",
+    "en": "Yujin",
+    "ko": "유진"
+   },
+   "images": [
+    {
+     "key": "commons-137777675",
+     "full": "cards/ive-yujin/1_full.webp",
+     "face": "cards/ive-yujin/1_face.webp",
+     "credit": "ive-yujin/commons-137777675"
+    },
+    {
+     "key": "commons-110962907",
+     "full": "cards/ive-yujin/2_full.webp",
+     "face": "cards/ive-yujin/2_face.webp",
+     "credit": "ive-yujin/commons-110962907"
+    },
+    {
+     "key": "commons-158734432",
+     "full": "cards/ive-yujin/3_full.webp",
+     "face": "cards/ive-yujin/3_face.webp",
+     "credit": "ive-yujin/commons-158734432"
+    },
+    {
+     "key": "commons-128705103",
+     "full": "cards/ive-yujin/4_full.webp",
+     "face": "cards/ive-yujin/4_face.webp",
+     "credit": "ive-yujin/commons-128705103"
+    },
+    {
+     "key": "commons-115758747",
+     "full": "cards/ive-yujin/5_full.webp",
+     "face": "cards/ive-yujin/5_face.webp",
+     "credit": "ive-yujin/commons-115758747"
+    }
+   ]
+  },
+  {
+   "id": "ive-gaeul",
+   "group": "ive",
+   "name": {
+    "ja": "ガウル",
+    "en": "Gaeul",
+    "ko": "가을"
+   },
+   "images": [
+    {
+     "key": "commons-130568789",
+     "full": "cards/ive-gaeul/1_full.webp",
+     "face": "cards/ive-gaeul/1_face.webp",
+     "credit": "ive-gaeul/commons-130568789"
+    },
+    {
+     "key": "commons-179961979",
+     "full": "cards/ive-gaeul/2_full.webp",
+     "face": "cards/ive-gaeul/2_face.webp",
+     "credit": "ive-gaeul/commons-179961979"
+    },
+    {
+     "key": "commons-154511725",
+     "full": "cards/ive-gaeul/3_full.webp",
+     "face": "cards/ive-gaeul/3_face.webp",
+     "credit": "ive-gaeul/commons-154511725"
+    },
+    {
+     "key": "commons-193126567",
+     "full": "cards/ive-gaeul/4_full.webp",
+     "face": "cards/ive-gaeul/4_face.webp",
+     "credit": "ive-gaeul/commons-193126567"
+    },
+    {
+     "key": "commons-139154758",
+     "full": "cards/ive-gaeul/5_full.webp",
+     "face": "cards/ive-gaeul/5_face.webp",
+     "credit": "ive-gaeul/commons-139154758"
+    }
+   ]
+  },
+  {
+   "id": "ive-rei",
+   "group": "ive",
+   "name": {
+    "ja": "レイ",
+    "en": "Rei",
+    "ko": "레이"
+   },
+   "images": [
+    {
+     "key": "commons-162913411",
+     "full": "cards/ive-rei/1_full.webp",
+     "face": "cards/ive-rei/1_face.webp",
+     "credit": "ive-rei/commons-162913411"
+    },
+    {
+     "key": "commons-130987234",
+     "full": "cards/ive-rei/2_full.webp",
+     "face": "cards/ive-rei/2_face.webp",
+     "credit": "ive-rei/commons-130987234"
+    },
+    {
+     "key": "commons-167642996",
+     "full": "cards/ive-rei/3_full.webp",
+     "face": "cards/ive-rei/3_face.webp",
+     "credit": "ive-rei/commons-167642996"
+    },
+    {
+     "key": "commons-186541259",
+     "full": "cards/ive-rei/4_full.webp",
+     "face": "cards/ive-rei/4_face.webp",
+     "credit": "ive-rei/commons-186541259"
+    },
+    {
+     "key": "commons-200725107",
+     "full": "cards/ive-rei/5_full.webp",
+     "face": "cards/ive-rei/5_face.webp",
+     "credit": "ive-rei/commons-200725107"
+    }
+   ]
+  },
+  {
+   "id": "ive-wonyoung",
+   "group": "ive",
+   "name": {
+    "ja": "ウォニョン",
+    "en": "Wonyoung",
+    "ko": "원영"
+   },
+   "images": [
+    {
+     "key": "commons-133218393",
+     "full": "cards/ive-wonyoung/1_full.webp",
+     "face": "cards/ive-wonyoung/1_face.webp",
+     "credit": "ive-wonyoung/commons-133218393"
+    },
+    {
+     "key": "commons-153380481",
+     "full": "cards/ive-wonyoung/2_full.webp",
+     "face": "cards/ive-wonyoung/2_face.webp",
+     "credit": "ive-wonyoung/commons-153380481"
+    },
+    {
+     "key": "commons-150713969",
+     "full": "cards/ive-wonyoung/3_full.webp",
+     "face": "cards/ive-wonyoung/3_face.webp",
+     "credit": "ive-wonyoung/commons-150713969"
+    },
+    {
+     "key": "commons-123316387",
+     "full": "cards/ive-wonyoung/4_full.webp",
+     "face": "cards/ive-wonyoung/4_face.webp",
+     "credit": "ive-wonyoung/commons-123316387"
+    },
+    {
+     "key": "commons-153823665",
+     "full": "cards/ive-wonyoung/5_full.webp",
+     "face": "cards/ive-wonyoung/5_face.webp",
+     "credit": "ive-wonyoung/commons-153823665"
+    }
+   ]
+  },
+  {
+   "id": "ive-liz",
+   "group": "ive",
+   "name": {
+    "ja": "リズ",
+    "en": "Liz",
+    "ko": "리즈"
+   },
+   "images": [
+    {
+     "key": "commons-154772692",
+     "full": "cards/ive-liz/1_full.webp",
+     "face": "cards/ive-liz/1_face.webp",
+     "credit": "ive-liz/commons-154772692"
+    },
+    {
+     "key": "commons-128705070",
+     "full": "cards/ive-liz/2_full.webp",
+     "face": "cards/ive-liz/2_face.webp",
+     "credit": "ive-liz/commons-128705070"
+    },
+    {
+     "key": "commons-192391304",
+     "full": "cards/ive-liz/3_full.webp",
+     "face": "cards/ive-liz/3_face.webp",
+     "credit": "ive-liz/commons-192391304"
+    },
+    {
+     "key": "commons-196175606",
+     "full": "cards/ive-liz/4_full.webp",
+     "face": "cards/ive-liz/4_face.webp",
+     "credit": "ive-liz/commons-196175606"
+    },
+    {
+     "key": "commons-202910905",
+     "full": "cards/ive-liz/5_full.webp",
+     "face": "cards/ive-liz/5_face.webp",
+     "credit": "ive-liz/commons-202910905"
+    }
+   ]
+  },
+  {
+   "id": "ive-leeseo",
+   "group": "ive",
+   "name": {
+    "ja": "イソ",
+    "en": "Leeseo",
+    "ko": "이서"
+   },
+   "images": [
+    {
+     "key": "commons-135402875",
+     "full": "cards/ive-leeseo/1_full.webp",
+     "face": "cards/ive-leeseo/1_face.webp",
+     "credit": "ive-leeseo/commons-135402875"
+    },
+    {
+     "key": "commons-116932719",
+     "full": "cards/ive-leeseo/2_full.webp",
+     "face": "cards/ive-leeseo/2_face.webp",
+     "credit": "ive-leeseo/commons-116932719"
+    },
+    {
+     "key": "commons-186540021",
+     "full": "cards/ive-leeseo/3_full.webp",
+     "face": "cards/ive-leeseo/3_face.webp",
+     "credit": "ive-leeseo/commons-186540021"
+    },
+    {
+     "key": "commons-123068872",
+     "full": "cards/ive-leeseo/4_full.webp",
+     "face": "cards/ive-leeseo/4_face.webp",
+     "credit": "ive-leeseo/commons-123068872"
+    },
+    {
+     "key": "commons-202875742",
+     "full": "cards/ive-leeseo/5_full.webp",
+     "face": "cards/ive-leeseo/5_face.webp",
+     "credit": "ive-leeseo/commons-202875742"
     }
    ]
   },
@@ -138,42 +1079,536 @@
      "credit": "lesserafim-chaewon/commons-129701999"
     },
     {
-     "key": "commons-123729760",
+     "key": "commons-74263199",
      "full": "cards/lesserafim-chaewon/2_full.webp",
      "face": "cards/lesserafim-chaewon/2_face.webp",
-     "credit": "lesserafim-chaewon/commons-123729760"
-    },
-    {
-     "key": "commons-74263199",
-     "full": "cards/lesserafim-chaewon/3_full.webp",
-     "face": "cards/lesserafim-chaewon/3_face.webp",
      "credit": "lesserafim-chaewon/commons-74263199"
     },
     {
      "key": "commons-73595337",
-     "full": "cards/lesserafim-chaewon/4_full.webp",
-     "face": "cards/lesserafim-chaewon/4_face.webp",
+     "full": "cards/lesserafim-chaewon/3_full.webp",
+     "face": "cards/lesserafim-chaewon/3_face.webp",
      "credit": "lesserafim-chaewon/commons-73595337"
     },
     {
      "key": "commons-147086351",
+     "full": "cards/lesserafim-chaewon/4_full.webp",
+     "face": "cards/lesserafim-chaewon/4_face.webp",
+     "credit": "lesserafim-chaewon/commons-147086351"
+    },
+    {
+     "key": "commons-201393992",
      "full": "cards/lesserafim-chaewon/5_full.webp",
      "face": "cards/lesserafim-chaewon/5_face.webp",
-     "credit": "lesserafim-chaewon/commons-147086351"
+     "credit": "lesserafim-chaewon/commons-201393992"
+    }
+   ]
+  },
+  {
+   "id": "lesserafim-sakura",
+   "group": "lesserafim",
+   "name": {
+    "ja": "サクラ",
+    "en": "Sakura",
+    "ko": "사쿠라"
+   },
+   "images": [
+    {
+     "key": "commons-117773373",
+     "full": "cards/lesserafim-sakura/1_full.webp",
+     "face": "cards/lesserafim-sakura/1_face.webp",
+     "credit": "lesserafim-sakura/commons-117773373"
+    },
+    {
+     "key": "commons-133788419",
+     "full": "cards/lesserafim-sakura/2_full.webp",
+     "face": "cards/lesserafim-sakura/2_face.webp",
+     "credit": "lesserafim-sakura/commons-133788419"
+    },
+    {
+     "key": "commons-79165288",
+     "full": "cards/lesserafim-sakura/3_full.webp",
+     "face": "cards/lesserafim-sakura/3_face.webp",
+     "credit": "lesserafim-sakura/commons-79165288"
+    },
+    {
+     "key": "commons-134048487",
+     "full": "cards/lesserafim-sakura/4_full.webp",
+     "face": "cards/lesserafim-sakura/4_face.webp",
+     "credit": "lesserafim-sakura/commons-134048487"
+    },
+    {
+     "key": "commons-125035423",
+     "full": "cards/lesserafim-sakura/5_full.webp",
+     "face": "cards/lesserafim-sakura/5_face.webp",
+     "credit": "lesserafim-sakura/commons-125035423"
+    }
+   ]
+  },
+  {
+   "id": "lesserafim-yunjin",
+   "group": "lesserafim",
+   "name": {
+    "ja": "ユンジン",
+    "en": "Huh Yunjin",
+    "ko": "허윤진"
+   },
+   "images": [
+    {
+     "key": "commons-133788418",
+     "full": "cards/lesserafim-yunjin/1_full.webp",
+     "face": "cards/lesserafim-yunjin/1_face.webp",
+     "credit": "lesserafim-yunjin/commons-133788418"
+    },
+    {
+     "key": "commons-157744073",
+     "full": "cards/lesserafim-yunjin/2_full.webp",
+     "face": "cards/lesserafim-yunjin/2_face.webp",
+     "credit": "lesserafim-yunjin/commons-157744073"
+    },
+    {
+     "key": "commons-121278275",
+     "full": "cards/lesserafim-yunjin/3_full.webp",
+     "face": "cards/lesserafim-yunjin/3_face.webp",
+     "credit": "lesserafim-yunjin/commons-121278275"
+    },
+    {
+     "key": "commons-128418246",
+     "full": "cards/lesserafim-yunjin/4_full.webp",
+     "face": "cards/lesserafim-yunjin/4_face.webp",
+     "credit": "lesserafim-yunjin/commons-128418246"
+    },
+    {
+     "key": "commons-117602789",
+     "full": "cards/lesserafim-yunjin/5_full.webp",
+     "face": "cards/lesserafim-yunjin/5_face.webp",
+     "credit": "lesserafim-yunjin/commons-117602789"
+    }
+   ]
+  },
+  {
+   "id": "lesserafim-kazuha",
+   "group": "lesserafim",
+   "name": {
+    "ja": "カズハ",
+    "en": "Kazuha",
+    "ko": "카즈하"
+   },
+   "images": [
+    {
+     "key": "commons-129701998",
+     "full": "cards/lesserafim-kazuha/1_full.webp",
+     "face": "cards/lesserafim-kazuha/1_face.webp",
+     "credit": "lesserafim-kazuha/commons-129701998"
+    },
+    {
+     "key": "commons-202817618",
+     "full": "cards/lesserafim-kazuha/2_full.webp",
+     "face": "cards/lesserafim-kazuha/2_face.webp",
+     "credit": "lesserafim-kazuha/commons-202817618"
+    },
+    {
+     "key": "commons-150680341",
+     "full": "cards/lesserafim-kazuha/3_full.webp",
+     "face": "cards/lesserafim-kazuha/3_face.webp",
+     "credit": "lesserafim-kazuha/commons-150680341"
+    },
+    {
+     "key": "commons-134048491",
+     "full": "cards/lesserafim-kazuha/4_full.webp",
+     "face": "cards/lesserafim-kazuha/4_face.webp",
+     "credit": "lesserafim-kazuha/commons-134048491"
+    },
+    {
+     "key": "commons-200731431",
+     "full": "cards/lesserafim-kazuha/5_full.webp",
+     "face": "cards/lesserafim-kazuha/5_face.webp",
+     "credit": "lesserafim-kazuha/commons-200731431"
+    }
+   ]
+  },
+  {
+   "id": "lesserafim-eunchae",
+   "group": "lesserafim",
+   "name": {
+    "ja": "ウンチェ",
+    "en": "Hong Eunchae",
+    "ko": "홍은채"
+   },
+   "images": [
+    {
+     "key": "commons-200774863",
+     "full": "cards/lesserafim-eunchae/1_full.webp",
+     "face": "cards/lesserafim-eunchae/1_face.webp",
+     "credit": "lesserafim-eunchae/commons-200774863"
+    },
+    {
+     "key": "commons-125035422",
+     "full": "cards/lesserafim-eunchae/2_full.webp",
+     "face": "cards/lesserafim-eunchae/2_face.webp",
+     "credit": "lesserafim-eunchae/commons-125035422"
+    },
+    {
+     "key": "commons-187517088",
+     "full": "cards/lesserafim-eunchae/3_full.webp",
+     "face": "cards/lesserafim-eunchae/3_face.webp",
+     "credit": "lesserafim-eunchae/commons-187517088"
+    },
+    {
+     "key": "commons-147839086",
+     "full": "cards/lesserafim-eunchae/4_full.webp",
+     "face": "cards/lesserafim-eunchae/4_face.webp",
+     "credit": "lesserafim-eunchae/commons-147839086"
+    },
+    {
+     "key": "commons-157744204",
+     "full": "cards/lesserafim-eunchae/5_full.webp",
+     "face": "cards/lesserafim-eunchae/5_face.webp",
+     "credit": "lesserafim-eunchae/commons-157744204"
+    }
+   ]
+  },
+  {
+   "id": "idle-miyeon",
+   "group": "idle",
+   "name": {
+    "ja": "ミヨン",
+    "en": "Miyeon",
+    "ko": "미연"
+   },
+   "images": [
+    {
+     "key": "commons-133928585",
+     "full": "cards/idle-miyeon/1_full.webp",
+     "face": "cards/idle-miyeon/1_face.webp",
+     "credit": "idle-miyeon/commons-133928585"
+    },
+    {
+     "key": "commons-148084451",
+     "full": "cards/idle-miyeon/2_full.webp",
+     "face": "cards/idle-miyeon/2_face.webp",
+     "credit": "idle-miyeon/commons-148084451"
+    },
+    {
+     "key": "commons-95858565",
+     "full": "cards/idle-miyeon/3_full.webp",
+     "face": "cards/idle-miyeon/3_face.webp",
+     "credit": "idle-miyeon/commons-95858565"
+    },
+    {
+     "key": "commons-135456125",
+     "full": "cards/idle-miyeon/4_full.webp",
+     "face": "cards/idle-miyeon/4_face.webp",
+     "credit": "idle-miyeon/commons-135456125"
+    },
+    {
+     "key": "commons-148084434",
+     "full": "cards/idle-miyeon/5_full.webp",
+     "face": "cards/idle-miyeon/5_face.webp",
+     "credit": "idle-miyeon/commons-148084434"
+    }
+   ]
+  },
+  {
+   "id": "idle-minnie",
+   "group": "idle",
+   "name": {
+    "ja": "ミンニ",
+    "en": "Minnie",
+    "ko": "민니"
+   },
+   "images": [
+    {
+     "key": "commons-170658510",
+     "full": "cards/idle-minnie/1_full.webp",
+     "face": "cards/idle-minnie/1_face.webp",
+     "credit": "idle-minnie/commons-170658510"
+    },
+    {
+     "key": "commons-169777263",
+     "full": "cards/idle-minnie/2_full.webp",
+     "face": "cards/idle-minnie/2_face.webp",
+     "credit": "idle-minnie/commons-169777263"
+    },
+    {
+     "key": "commons-193672537",
+     "full": "cards/idle-minnie/3_full.webp",
+     "face": "cards/idle-minnie/3_face.webp",
+     "credit": "idle-minnie/commons-193672537"
+    },
+    {
+     "key": "commons-194773794",
+     "full": "cards/idle-minnie/4_full.webp",
+     "face": "cards/idle-minnie/4_face.webp",
+     "credit": "idle-minnie/commons-194773794"
+    },
+    {
+     "key": "commons-133927513",
+     "full": "cards/idle-minnie/5_full.webp",
+     "face": "cards/idle-minnie/5_face.webp",
+     "credit": "idle-minnie/commons-133927513"
+    }
+   ]
+  },
+  {
+   "id": "idle-soyeon",
+   "group": "idle",
+   "name": {
+    "ja": "ソヨン",
+    "en": "Soyeon",
+    "ko": "소연"
+   },
+   "images": [
+    {
+     "key": "commons-133928772",
+     "full": "cards/idle-soyeon/1_full.webp",
+     "face": "cards/idle-soyeon/1_face.webp",
+     "credit": "idle-soyeon/commons-133928772"
+    },
+    {
+     "key": "commons-148084458",
+     "full": "cards/idle-soyeon/2_full.webp",
+     "face": "cards/idle-soyeon/2_face.webp",
+     "credit": "idle-soyeon/commons-148084458"
+    },
+    {
+     "key": "commons-202948446",
+     "full": "cards/idle-soyeon/3_full.webp",
+     "face": "cards/idle-soyeon/3_face.webp",
+     "credit": "idle-soyeon/commons-202948446"
+    },
+    {
+     "key": "commons-152538901",
+     "full": "cards/idle-soyeon/4_full.webp",
+     "face": "cards/idle-soyeon/4_face.webp",
+     "credit": "idle-soyeon/commons-152538901"
+    },
+    {
+     "key": "commons-160566603",
+     "full": "cards/idle-soyeon/5_full.webp",
+     "face": "cards/idle-soyeon/5_face.webp",
+     "credit": "idle-soyeon/commons-160566603"
+    }
+   ]
+  },
+  {
+   "id": "idle-yuqi",
+   "group": "idle",
+   "name": {
+    "ja": "ウギ",
+    "en": "Yuqi",
+    "ko": "우기"
+   },
+   "images": [
+    {
+     "key": "commons-96066262",
+     "full": "cards/idle-yuqi/1_full.webp",
+     "face": "cards/idle-yuqi/1_face.webp",
+     "credit": "idle-yuqi/commons-96066262"
+    },
+    {
+     "key": "commons-133928469",
+     "full": "cards/idle-yuqi/2_full.webp",
+     "face": "cards/idle-yuqi/2_face.webp",
+     "credit": "idle-yuqi/commons-133928469"
+    },
+    {
+     "key": "commons-113275950",
+     "full": "cards/idle-yuqi/3_full.webp",
+     "face": "cards/idle-yuqi/3_face.webp",
+     "credit": "idle-yuqi/commons-113275950"
+    },
+    {
+     "key": "commons-96127413",
+     "full": "cards/idle-yuqi/4_full.webp",
+     "face": "cards/idle-yuqi/4_face.webp",
+     "credit": "idle-yuqi/commons-96127413"
+    },
+    {
+     "key": "commons-129664947",
+     "full": "cards/idle-yuqi/5_full.webp",
+     "face": "cards/idle-yuqi/5_face.webp",
+     "credit": "idle-yuqi/commons-129664947"
+    }
+   ]
+  },
+  {
+   "id": "idle-shuhua",
+   "group": "idle",
+   "name": {
+    "ja": "シュファ",
+    "en": "Shuhua",
+    "ko": "슈화"
+   },
+   "images": [
+    {
+     "key": "commons-133928206",
+     "full": "cards/idle-shuhua/1_full.webp",
+     "face": "cards/idle-shuhua/1_face.webp",
+     "credit": "idle-shuhua/commons-133928206"
+    },
+    {
+     "key": "commons-199813408",
+     "full": "cards/idle-shuhua/2_full.webp",
+     "face": "cards/idle-shuhua/2_face.webp",
+     "credit": "idle-shuhua/commons-199813408"
+    },
+    {
+     "key": "commons-148084515",
+     "full": "cards/idle-shuhua/3_full.webp",
+     "face": "cards/idle-shuhua/3_face.webp",
+     "credit": "idle-shuhua/commons-148084515"
+    }
+   ]
+  },
+  {
+   "id": "newjeans-minji",
+   "group": "newjeans",
+   "name": {
+    "ja": "ミンジ",
+    "en": "Minji",
+    "ko": "민지"
+   },
+   "images": [
+    {
+     "key": "commons-137032702",
+     "full": "cards/newjeans-minji/1_full.webp",
+     "face": "cards/newjeans-minji/1_face.webp",
+     "credit": "newjeans-minji/commons-137032702"
+    },
+    {
+     "key": "commons-157809372",
+     "full": "cards/newjeans-minji/2_full.webp",
+     "face": "cards/newjeans-minji/2_face.webp",
+     "credit": "newjeans-minji/commons-157809372"
+    },
+    {
+     "key": "commons-146023386",
+     "full": "cards/newjeans-minji/3_full.webp",
+     "face": "cards/newjeans-minji/3_face.webp",
+     "credit": "newjeans-minji/commons-146023386"
+    },
+    {
+     "key": "commons-122063750",
+     "full": "cards/newjeans-minji/4_full.webp",
+     "face": "cards/newjeans-minji/4_face.webp",
+     "credit": "newjeans-minji/commons-122063750"
+    }
+   ]
+  },
+  {
+   "id": "newjeans-hanni",
+   "group": "newjeans",
+   "name": {
+    "ja": "ハニ",
+    "en": "Hanni",
+    "ko": "하니"
+   },
+   "images": [
+    {
+     "key": "commons-132708141",
+     "full": "cards/newjeans-hanni/1_full.webp",
+     "face": "cards/newjeans-hanni/1_face.webp",
+     "credit": "newjeans-hanni/commons-132708141"
+    },
+    {
+     "key": "commons-139111199",
+     "full": "cards/newjeans-hanni/2_full.webp",
+     "face": "cards/newjeans-hanni/2_face.webp",
+     "credit": "newjeans-hanni/commons-139111199"
+    },
+    {
+     "key": "commons-148759344",
+     "full": "cards/newjeans-hanni/3_full.webp",
+     "face": "cards/newjeans-hanni/3_face.webp",
+     "credit": "newjeans-hanni/commons-148759344"
+    },
+    {
+     "key": "commons-137032700",
+     "full": "cards/newjeans-hanni/4_full.webp",
+     "face": "cards/newjeans-hanni/4_face.webp",
+     "credit": "newjeans-hanni/commons-137032700"
+    },
+    {
+     "key": "commons-121436083",
+     "full": "cards/newjeans-hanni/5_full.webp",
+     "face": "cards/newjeans-hanni/5_face.webp",
+     "credit": "newjeans-hanni/commons-121436083"
+    }
+   ]
+  },
+  {
+   "id": "newjeans-haerin",
+   "group": "newjeans",
+   "name": {
+    "ja": "ヘリン",
+    "en": "Haerin",
+    "ko": "해린"
+   },
+   "images": [
+    {
+     "key": "commons-121701011",
+     "full": "cards/newjeans-haerin/1_full.webp",
+     "face": "cards/newjeans-haerin/1_face.webp",
+     "credit": "newjeans-haerin/commons-121701011"
+    },
+    {
+     "key": "commons-137032707",
+     "full": "cards/newjeans-haerin/2_full.webp",
+     "face": "cards/newjeans-haerin/2_face.webp",
+     "credit": "newjeans-haerin/commons-137032707"
+    },
+    {
+     "key": "commons-141692540",
+     "full": "cards/newjeans-haerin/3_full.webp",
+     "face": "cards/newjeans-haerin/3_face.webp",
+     "credit": "newjeans-haerin/commons-141692540"
+    },
+    {
+     "key": "commons-199112624",
+     "full": "cards/newjeans-haerin/4_full.webp",
+     "face": "cards/newjeans-haerin/4_face.webp",
+     "credit": "newjeans-haerin/commons-199112624"
+    },
+    {
+     "key": "commons-144863570",
+     "full": "cards/newjeans-haerin/5_full.webp",
+     "face": "cards/newjeans-haerin/5_face.webp",
+     "credit": "newjeans-haerin/commons-144863570"
+    }
+   ]
+  },
+  {
+   "id": "newjeans-hyein",
+   "group": "newjeans",
+   "name": {
+    "ja": "ヘイン",
+    "en": "Hyein",
+    "ko": "혜인"
+   },
+   "images": [
+    {
+     "key": "commons-150828599",
+     "full": "cards/newjeans-hyein/1_full.webp",
+     "face": "cards/newjeans-hyein/1_face.webp",
+     "credit": "newjeans-hyein/commons-150828599"
+    },
+    {
+     "key": "commons-137032708",
+     "full": "cards/newjeans-hyein/2_full.webp",
+     "face": "cards/newjeans-hyein/2_face.webp",
+     "credit": "newjeans-hyein/commons-137032708"
+    },
+    {
+     "key": "commons-122063749",
+     "full": "cards/newjeans-hyein/3_full.webp",
+     "face": "cards/newjeans-hyein/3_face.webp",
+     "credit": "newjeans-hyein/commons-122063749"
     }
    ]
   }
  ],
  "credits": {
-  "blackpink-jisoo/commons-88913578": {
-   "title": "File:Kim Ji-soo at Incheon Airport to Japan on October 05, 2018 (16).png",
-   "author": "Off The Page",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Ji-soo_at_Incheon_Airport_to_Japan_on_October_05,_2018_(16).png",
-   "source": "commons",
-   "modified": "トリミング・回転・拡大縮小・背景除去"
-  },
   "blackpink-jisoo/commons-91348029": {
    "title": "File:170517 Kim Ji-soo Blackpink 04.jpg",
    "author": "D4cgrapher",
@@ -192,12 +1627,21 @@
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
-  "blackpink-jisoo/commons-79087776": {
-   "title": "File:(180819) Jisoo em um evento de fansign do Black Pink no Live Plaza da COEX em Seul 04.jpg",
+  "blackpink-jisoo/commons-88913573": {
+   "title": "File:Kim Ji-soo at Incheon Airport to Japan on October 05, 2018 (11).png",
+   "author": "Off The Page",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Ji-soo_at_Incheon_Airport_to_Japan_on_October_05,_2018_(11).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jisoo/commons-79087769": {
+   "title": "File:(180819) Jisoo em um evento de fansign do Black Pink no Live Plaza da COEX em Seul 03.jpg",
    "author": "Idol Hunter",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(180819)_Jisoo_em_um_evento_de_fansign_do_Black_Pink_no_Live_Plaza_da_COEX_em_Seul_04.jpg",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(180819)_Jisoo_em_um_evento_de_fansign_do_Black_Pink_no_Live_Plaza_da_COEX_em_Seul_03.jpg",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
@@ -207,6 +1651,141 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:170517_Kim_Ji-soo_Blackpink_02.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jennie/commons-79087178": {
+   "title": "File:(180819) Jennie em um evento de fansign do Black Pink no Live Plaza da COEX em Seul 01.jpg",
+   "author": "Idol Hunter",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(180819)_Jennie_em_um_evento_de_fansign_do_Black_Pink_no_Live_Plaza_da_COEX_em_Seul_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jennie/commons-91320479": {
+   "title": "File:170517 Jennie Kim Blackpink 01.jpg",
+   "author": "D4cgrapher",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:170517_Jennie_Kim_Blackpink_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jennie/commons-193109107": {
+   "title": "File:20260526 Jennie Kim 04.jpg",
+   "author": "티비텐",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260526_Jennie_Kim_04.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jennie/commons-104630103": {
+   "title": "File:Jennie Kim Marie Claire Korea 2020.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jennie_Kim_Marie_Claire_Korea_2020.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jennie/commons-91870914": {
+   "title": "File:Jennie Kim in JentleHome Tour with Jennie on May 15, 2020.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jennie_Kim_in_JentleHome_Tour_with_Jennie_on_May_15,_2020.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-rose/commons-123818011": {
+   "title": "File:Rosé at a fan signing event on September 25, 2022 (cropped).jpg",
+   "author": "Btspurplegalaxy",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ros%C3%A9_at_a_fan_signing_event_on_September_25,_2022_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-rose/commons-147415087": {
+   "title": "File:Blackpink Rosé Rimowa 2.jpg",
+   "author": "TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackpink_Ros%C3%A9_Rimowa_2.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-rose/commons-75621534": {
+   "title": "File:20190106 (NEWSEN) 블랙핑크(BLACKPINK), 수줍은 많은 소녀지만 돋보이는 아름다운 미모 (Golden Disc Awards 2019) (4).jpg",
+   "author": "Newsenstar1",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190106_(NEWSEN)_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC(BLACKPINK),_%EC%88%98%EC%A4%8D%EC%9D%80_%EB%A7%8E%EC%9D%80_%EC%86%8C%EB%85%80%EC%A7%80%EB%A7%8C_%EB%8F%8B%EB%B3%B4%EC%9D%B4%EB%8A%94_%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4_%EB%AF%B8%EB%AA%A8_(Golden_Disc_Awards_2019)_(4).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-rose/commons-63223625": {
+   "title": "File:171001 코리아 뮤직 페스티벌 블랙핑크 (1).jpg",
+   "author": "HeyDay",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:171001_%EC%BD%94%EB%A6%AC%EC%95%84_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC_(1).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-rose/commons-114800769": {
+   "title": "File:Rose from BLACKPINK PUBG 210321 (cropped) 2.jpg",
+   "author": "PUBG MOBILE",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rose_from_BLACKPINK_PUBG_210321_(cropped)_2.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-lisa/commons-165861851": {
+   "title": "File:Lisa at BVLGARI's Polychroma Collection fashion show, 19 May 2025 03.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisa_at_BVLGARI%27s_Polychroma_Collection_fashion_show,_19_May_2025_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-lisa/commons-147725494": {
+   "title": "File:20240314 Lisa Manoban 13.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240314_Lisa_Manoban_13.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-lisa/commons-140136718": {
+   "title": "File:BLACKPINK's Lisa for BULGARI June 2023 02 (cropped).jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BLACKPINK%27s_Lisa_for_BULGARI_June_2023_02_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-lisa/commons-175311721": {
+   "title": "File:Lisa at BIFF 2025 03.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisa_at_BIFF_2025_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-lisa/commons-124522819": {
+   "title": "File:Blackpink Lisa at Bvulgari Avrora Awards 2022.png",
+   "author": "E|ㅂ|텐 (TV10)",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackpink_Lisa_at_Bvulgari_Avrora_Awards_2022.png",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
@@ -237,21 +1816,831 @@
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
-  "twice-nayeon/commons-95562560": {
-   "title": "File:Nayeon in SBS Radio (2020).png",
-   "author": "SBS Radio 에라오",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nayeon_in_SBS_Radio_(2020).png",
+  "twice-nayeon/commons-118253171": {
+   "title": "File:Nayeon in 2017 Fan meeting.jpg",
+   "author": "https://mcjoun.tistory.com/",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nayeon_in_2017_Fan_meeting.jpg",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
-  "twice-nayeon/commons-50833473": {
-   "title": "File:Twice Nayeon at KCON 2016 LA fan engagement.jpg",
-   "author": "mduangdara from Midlothian, VA, United States",
+  "twice-nayeon/commons-70564233": {
+   "title": "File:Im Na-yeon at LG Twins vs KIA Tigers game on April 1, 2018 (1) (cropped).jpg",
+   "author": "Hey Day",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Im_Na-yeon_at_LG_Twins_vs_KIA_Tigers_game_on_April_1,_2018_(1)_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jeongyeon/commons-150182206": {
+   "title": "File:Twice Jeongyeon in 2023 05.jpg",
+   "author": "파리게이츠",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Twice_Jeongyeon_in_2023_05.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jeongyeon/commons-114873255": {
+   "title": "File:Jeongyeon in 2019 1 (derived).jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeongyeon_in_2019_1_(derived).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jeongyeon/commons-118042590": {
+   "title": "File:Jeongyeon in 2017.jpg",
+   "author": "McJoun",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeongyeon_in_2017.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jeongyeon/commons-159966300": {
+   "title": "File:Jeongyeon in september 2024.png",
+   "author": "https://www.youtube.com/@_TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeongyeon_in_september_2024.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jeongyeon/commons-59347782": {
+   "title": "File:Yoo Jeong-yeon at Lotte Family Concert on May 20, 2017 (2).jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoo_Jeong-yeon_at_Lotte_Family_Concert_on_May_20,_2017_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-momo/commons-137818712": {
+   "title": "File:20230918 Momo Hirai 平井 もも 2023 09.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230918_Momo_Hirai_%E5%B9%B3%E4%BA%95_%E3%82%82%E3%82%82_2023_09.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-momo/commons-73082625": {
+   "title": "File:180717 열린음악회 트와이스 (4).jpg",
+   "author": "월아조운",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(4).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-momo/commons-134389189": {
+   "title": "File:TWICE's Momo Hirai on the set of 22SS PEARLY GATES X TWICE TV CF 'BEHIND FILM' 03.jpg",
+   "author": "파리게이츠",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:TWICE%27s_Momo_Hirai_on_the_set_of_22SS_PEARLY_GATES_X_TWICE_TV_CF_%27BEHIND_FILM%27_03.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-momo/commons-136106211": {
+   "title": "File:20230817 Momo Hirai for Pearly Gates Korea 01.jpg",
+   "author": "Pearly Gates Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230817_Momo_Hirai_for_Pearly_Gates_Korea_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-momo/commons-118042616": {
+   "title": "File:Momo in 2017.jpg",
+   "author": "McJoun",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Momo_in_2017.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-sana/commons-113832748": {
+   "title": "File:Sana at a fansigning event on December 20, 2015 08.jpg",
+   "author": "SHAQ Photo",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sana_at_a_fansigning_event_on_December_20,_2015_08.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-sana/commons-50349584": {
+   "title": "File:Minatozaki Sana 160628 RedCettu 2.jpg",
+   "author": "SHAQ34",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minatozaki_Sana_160628_RedCettu_2.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-sana/commons-56706759": {
+   "title": "File:Minatozaki Sana 160706 Nature Collection.jpg",
+   "author": "SHAQ34",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minatozaki_Sana_160706_Nature_Collection.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-sana/commons-63777159": {
+   "title": "File:Minatozaki Sana in a showcase on October 30, 2017 (2).jpg",
+   "author": "SHAQ Photo",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minatozaki_Sana_in_a_showcase_on_October_30,_2017_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-sana/commons-60582369": {
+   "title": "File:Minatozaki Sana at Twiceland Encore Concert in Seoul on June 17, 2017 (2).jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minatozaki_Sana_at_Twiceland_Encore_Concert_in_Seoul_on_June_17,_2017_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jihyo/commons-115595972": {
+   "title": "File:181117 상암 팬싸인회 (2).jpg",
+   "author": "Wink Angel",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:181117_%EC%83%81%EC%95%94_%ED%8C%AC%EC%8B%B8%EC%9D%B8%ED%9A%8C_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jihyo/commons-198412066": {
+   "title": "File:082726 Jihyo at The Whoo photocall 05.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:082726_Jihyo_at_The_Whoo_photocall_05.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jihyo/commons-195149416": {
+   "title": "File:20260624 Jihyo 02.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260624_Jihyo_02.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jihyo/commons-136633869": {
+   "title": "File:JIHYO (지효) – FANCAM – 2023.08.26 – P2.png",
+   "author": "mang2goon",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:JIHYO_(%EC%A7%80%ED%9A%A8)_%E2%80%93_FANCAM_%E2%80%93_2023.08.26_%E2%80%93_P2.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-jihyo/commons-118042593": {
+   "title": "File:Jihyo in 2017.jpg",
+   "author": "McJoun",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jihyo_in_2017.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-mina/commons-117089816": {
+   "title": "File:20220121—Mina 미나 Campaign Film, Pearlygates x Twice 2022.jpg",
+   "author": "파리게이츠",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20220121%E2%80%94Mina_%EB%AF%B8%EB%82%98_Campaign_Film,_Pearlygates_x_Twice_2022.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-mina/commons-132503540": {
+   "title": "File:Twice mina with finger heart in 2015 (cropped).jpg",
+   "author": "덴오빠 (denoppa)",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Twice_mina_with_finger_heart_in_2015_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-mina/commons-144964711": {
+   "title": "File:190324 Mina Myoui (cropped).jpg",
+   "author": "시간은금!",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:190324_Mina_Myoui_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-mina/commons-144964550": {
+   "title": "File:TWICE's Mina Myoui on the set of 22SS PEARLY GATES X TWICE TV CF 'BEHIND FILM' 01 (cropped).jpg",
+   "author": "파리게이츠",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:TWICE%27s_Mina_Myoui_on_the_set_of_22SS_PEARLY_GATES_X_TWICE_TV_CF_%27BEHIND_FILM%27_01_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-mina/commons-118491009": {
+   "title": "File:Mina in 2015.jpg",
+   "author": "https://shaq32.tistory.com",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mina_in_2015.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-dahyun/commons-59347784": {
+   "title": "File:Kim Da-hyun at Lotte Family Concert on May 20, 2017 (1).jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Da-hyun_at_Lotte_Family_Concert_on_May_20,_2017_(1).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-dahyun/commons-160150332": {
+   "title": "File:Dahyun at press conference for You Are the Apple of My Eye 02.png",
+   "author": "https://www.youtube.com/@_TV10/videos",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahyun_at_press_conference_for_You_Are_the_Apple_of_My_Eye_02.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-dahyun/commons-118491007": {
+   "title": "File:Dahyun in 2015.jpg",
+   "author": "https://shaq32.tistory.com",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahyun_in_2015.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-dahyun/commons-118253165": {
+   "title": "File:Dahyun in 2017 Fan meeting.jpg",
+   "author": "https://mcjoun.tistory.com/",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahyun_in_2017_Fan_meeting.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-dahyun/commons-160150330": {
+   "title": "File:Dahyun at press conference for You Are the Apple of My Eye 03.png",
+   "author": "https://www.youtube.com/@_TV10/videos",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahyun_at_press_conference_for_You_Are_the_Apple_of_My_Eye_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-chaeyoung/commons-113832943": {
+   "title": "File:Chaeyoung at a fansigning event on December 20, 2015 01.jpg",
+   "author": "SHAQ Photo",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaeyoung_at_a_fansigning_event_on_December_20,_2015_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-chaeyoung/commons-70571042": {
+   "title": "File:Son Chae-young at fansigning on April 29, 2018 (4).jpg",
+   "author": "시간은금!",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Son_Chae-young_at_fansigning_on_April_29,_2018_(4).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-chaeyoung/commons-118042595": {
+   "title": "File:Chaeyoung in 2017.jpg",
+   "author": "McJoun",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaeyoung_in_2017.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-chaeyoung/commons-76542104": {
+   "title": "File:Chaeyoung at Asia Artist Awards on November 28, 2018 (2).jpg",
+   "author": "시간은금!",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaeyoung_at_Asia_Artist_Awards_on_November_28,_2018_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-chaeyoung/commons-118253164": {
+   "title": "File:Chaeyoung in 2017 Fan meeting.jpg",
+   "author": "https://mcjoun.tistory.com/",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaeyoung_in_2017_Fan_meeting.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-tzuyu/commons-128531476": {
+   "title": "File:151020 트와이스 - 데뷔 쇼케이스 TWICE - Debut Showcase 30.jpg",
+   "author": "den_oppa",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:151020_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_-_%EB%8D%B0%EB%B7%94_%EC%87%BC%EC%BC%80%EC%9D%B4%EC%8A%A4_TWICE_-_Debut_Showcase_30.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-tzuyu/commons-58124431": {
+   "title": "File:Chou Tzu-yu at Twice Sudden Attack Fan Meeting on March 25, 2017 (3).jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chou_Tzu-yu_at_Twice_Sudden_Attack_Fan_Meeting_on_March_25,_2017_(3).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-tzuyu/commons-134384855": {
+   "title": "File:TWICE's Chou Tzuyu on the set of 22SS PEARLY GATES X TWICE TV CF 'BEHIND FILM' 11.jpg",
+   "author": "파리게이츠",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:TWICE%27s_Chou_Tzuyu_on_the_set_of_22SS_PEARLY_GATES_X_TWICE_TV_CF_%27BEHIND_FILM%27_11.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-tzuyu/commons-60581918": {
+   "title": "File:Chou Tzu-yu at Twiceland Encore Concert in Seoul on June 17, 2017.jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chou_Tzu-yu_at_Twiceland_Encore_Concert_in_Seoul_on_June_17,_2017.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-tzuyu/commons-47392634": {
+   "title": "File:Chou Tzu-yu performing at SAC 2016 01.jpg",
+   "author": "Hey Day",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chou_Tzu-yu_performing_at_SAC_2016_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-karina/commons-141563889": {
+   "title": "File:Aespa's Karina 5.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa%27s_Karina_5.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-karina/commons-130128060": {
+   "title": "File:Aespa Karina at Acqua Di Parma Event November 2022.jpg",
+   "author": "K-POPIT 케이팝잇 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa_Karina_at_Acqua_Di_Parma_Event_November_2022.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-karina/commons-156323091": {
+   "title": "File:Aespa Karina 2024 MMA 2.jpg",
+   "author": "10Asia",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa_Karina_2024_MMA_2.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-karina/commons-142076689": {
+   "title": "File:Aespa Karina 231111 Mini Fanmeeting 03.png",
+   "author": "CoatingCAM",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa_Karina_231111_Mini_Fanmeeting_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-karina/commons-163894136": {
+   "title": "File:231225 Karina of aespa @SBS Gayo Daejeon 05 (cropped).jpg",
+   "author": "plumflower snow",
    "license": "CC BY-SA 2.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Twice_Nayeon_at_KCON_2016_LA_fan_engagement.jpg",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:231225_Karina_of_aespa_@SBS_Gayo_Daejeon_05_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-giselle/commons-163607495": {
+   "title": "File:250111 aespa Giselle 01.jpg",
+   "author": "snow plumflower",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:250111_aespa_Giselle_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-giselle/commons-164862754": {
+   "title": "File:250315-16 aespa Giselle 05.jpg",
+   "author": "snow plumflower",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:250315-16_aespa_Giselle_05.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-giselle/commons-150003437": {
+   "title": "File:Aespa Giselle 지젤 20230218.jpg",
+   "author": "plumflower snow",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa_Giselle_%EC%A7%80%EC%A0%A4_20230218.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-giselle/commons-153722981": {
+   "title": "File:241005 Giselle K-Link Festival.jpg",
+   "author": "plumflower snow",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:241005_Giselle_K-Link_Festival.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-giselle/commons-130128253": {
+   "title": "File:Aespa Giselle At Acqua Di Parma Event In November 2022.jpg",
+   "author": "K-POPIT 케이팝잇 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa_Giselle_At_Acqua_Di_Parma_Event_In_November_2022.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-winter/commons-141563893": {
+   "title": "File:Aespa's Winter 8.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aespa%27s_Winter_8.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-winter/commons-184579102": {
+   "title": "File:Winter at Mise-en-Scene event on 19022026 (2).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_at_Mise-en-Scene_event_on_19022026_(2).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-winter/commons-184581569": {
+   "title": "File:Winter at Kilian Paris event on 27012026 (4).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_at_Kilian_Paris_event_on_27012026_(4).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-winter/commons-203049673": {
+   "title": "File:10062026 WINTER·KARINA Airport Departure 7.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:10062026_WINTER%C2%B7KARINA_Airport_Departure_7.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-winter/commons-184581564": {
+   "title": "File:Winter at Kilian Paris event on 27012026 (1).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_at_Kilian_Paris_event_on_27012026_(1).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-ningning/commons-202738105": {
+   "title": "File:03112026 Aespa NingNing Airport Departure 10.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:03112026_Aespa_NingNing_Airport_Departure_10.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-ningning/commons-198409990": {
+   "title": "File:072926 Ningning at Gucci photocall 03.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:072926_Ningning_at_Gucci_photocall_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-ningning/commons-141535511": {
+   "title": "File:Ningning at Versace La Vacanza on 230711.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ningning_at_Versace_La_Vacanza_on_230711.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-ningning/commons-184579099": {
+   "title": "File:Ningning at Mise-en-Scene event on 19022026 (3).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ningning_at_Mise-en-Scene_event_on_19022026_(3).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "aespa-ningning/commons-185310886": {
+   "title": "File:Ningning at Incheon Airport on 25022026 (1).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ningning_at_Incheon_Airport_on_25022026_(1).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-yujin/commons-137777675": {
+   "title": "File:20230918 An Yu-jin (안유진).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230918_An_Yu-jin_(%EC%95%88%EC%9C%A0%EC%A7%84).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-yujin/commons-110962907": {
+   "title": "File:180823MCDAhnYujin.jpg",
+   "author": "yujin-sign",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:180823MCDAhnYujin.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-yujin/commons-158734432": {
+   "title": "File:An Yu-jin for Marie Claire Korea on 26052022 (1).png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_Yu-jin_for_Marie_Claire_Korea_on_26052022_(1).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-yujin/commons-128705103": {
+   "title": "File:221128 An Yu-jin (IVE).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221128_An_Yu-jin_(IVE).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-yujin/commons-115758747": {
+   "title": "File:An Yu-Jin 220304.png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_Yu-Jin_220304.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-gaeul/commons-130568789": {
+   "title": "File:Ive's Gaul In January 2023.jpg",
+   "author": "K-POPIT 케이팝잇 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ive%27s_Gaul_In_January_2023.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-gaeul/commons-179961979": {
+   "title": "File:Ive Gaeul at Seoul Fashion Week, 1 September 2025 03 (cropped).png",
+   "author": "티비텐 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ive_Gaeul_at_Seoul_Fashion_Week,_1_September_2025_03_(cropped).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-gaeul/commons-154511725": {
+   "title": "File:Gaeul at Dolce&Gabbana photocall, 24 October 2024 01.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaeul_at_Dolce%26Gabbana_photocall,_24_October_2024_01.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-gaeul/commons-193126567": {
+   "title": "File:Gaeul of Ive at Senka Pop-up Event, May 19, 2026 (3).png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaeul_of_Ive_at_Senka_Pop-up_Event,_May_19,_2026_(3).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-gaeul/commons-139154758": {
+   "title": "File:IVE Gaeul on the way to Music Bank - October 13, 2023 01.jpg",
+   "author": "티비텐 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:IVE_Gaeul_on_the_way_to_Music_Bank_-_October_13,_2023_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-rei/commons-162913411": {
+   "title": "File:Ive's Rei at Ralph Lauren Hannam store opening, 26 March 2025 03.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ive%27s_Rei_at_Ralph_Lauren_Hannam_store_opening,_26_March_2025_03.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-rei/commons-130987234": {
+   "title": "File:Ive's Rei in 2023.jpg",
+   "author": "K-POPIT 케이팝잇 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ive%27s_Rei_in_2023.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-rei/commons-167642996": {
+   "title": "File:Ive's Rei @ OPENING PROJECTxSATUR PhotoCall, 12 June 2025 02.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ive%27s_Rei_@_OPENING_PROJECTxSATUR_PhotoCall,_12_June_2025_02.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-rei/commons-186541259": {
+   "title": "File:Rei of Ive at the Valentino event, March 20, 2026 (4).png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rei_of_Ive_at_the_Valentino_event,_March_20,_2026_(4).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-rei/commons-200725107": {
+   "title": "File:29092026 IVE REI rom'u PhotoCall 8.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:29092026_IVE_REI_rom%27u_PhotoCall_8.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-wonyoung/commons-133218393": {
+   "title": "File:장원영 (JANG WONYOUNG) - RIMOWA - 2023.05.13 P1.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%9E%A5%EC%9B%90%EC%98%81_(JANG_WONYOUNG)_-_RIMOWA_-_2023.05.13_P1.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-wonyoung/commons-153380481": {
+   "title": "File:Jang Won-young of Ive in Incheon Airport, September 7, 2024.png",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jang_Won-young_of_Ive_in_Incheon_Airport,_September_7,_2024.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-wonyoung/commons-150713969": {
+   "title": "File:Jang Wonyoung 장원영 Kérastase’s NEW Ambassador 09.jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jang_Wonyoung_%EC%9E%A5%EC%9B%90%EC%98%81_K%C3%A9rastase%E2%80%99s_NEW_Ambassador_09.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-wonyoung/commons-123316387": {
+   "title": "File:Jang Won-young at Music Bank attending a fan meet on September 16, 2022.jpg",
+   "author": "Btspurplegalaxy",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jang_Won-young_at_Music_Bank_attending_a_fan_meet_on_September_16,_2022.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-wonyoung/commons-153823665": {
+   "title": "File:20241010 Wonyoung for Tommy Hilfiger 03.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20241010_Wonyoung_for_Tommy_Hilfiger_03.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-liz/commons-154772692": {
+   "title": "File:Liz at MLB Hannam flagship store opening, 31 October 2024 05.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liz_at_MLB_Hannam_flagship_store_opening,_31_October_2024_05.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-liz/commons-128705070": {
+   "title": "File:221112 Liz (IVE).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221112_Liz_(IVE).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-liz/commons-192391304": {
+   "title": "File:Liz of Ive at K-SWISS Flagship Store Open Event, May 7, 2026 (1).png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liz_of_Ive_at_K-SWISS_Flagship_Store_Open_Event,_May_7,_2026_(1).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-liz/commons-196175606": {
+   "title": "File:260719 LIZ (Kim Jiwon).png",
+   "author": "Upload: K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:260719_LIZ_(Kim_Jiwon).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-liz/commons-202910905": {
+   "title": "File:06112026 LIZ VALENTINO 4.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:06112026_LIZ_VALENTINO_4.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-leeseo/commons-135402875": {
+   "title": "File:IVE Leeseo Rimowa 3.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:IVE_Leeseo_Rimowa_3.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-leeseo/commons-116932719": {
+   "title": "File:Leeseo 220416 SBS Radio.png",
+   "author": "SBS Radio",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leeseo_220416_SBS_Radio.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-leeseo/commons-186540021": {
+   "title": "File:Leeseo of Ive, March 19, 2026 (3).png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leeseo_of_Ive,_March_19,_2026_(3).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-leeseo/commons-123068872": {
+   "title": "File:20220916—Leeseo 이서, interview, Marie Claire Korea (02m12s).jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20220916%E2%80%94Leeseo_%EC%9D%B4%EC%84%9C,_interview,_Marie_Claire_Korea_(02m12s).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "ive-leeseo/commons-202875742": {
+   "title": "File:29052026 IVE LEESEO CARLYN PHOTO CALL 1.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:29052026_IVE_LEESEO_CARLYN_PHOTO_CALL_1.png",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
@@ -261,15 +2650,6 @@
    "license": "CC BY 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:221127_Kim_Chae-won_(LE_SSERAFIM).jpg",
-   "source": "commons",
-   "modified": "トリミング・回転・拡大縮小・背景除去"
-  },
-  "lesserafim-chaewon/commons-123729760": {
-   "title": "File:Kim Chaewon LE SSERAFIM 220923.jpg",
-   "author": "MUSHROOM COMPANY",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Chaewon_LE_SSERAFIM_220923.jpg",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   },
@@ -297,6 +2677,555 @@
    "license": "CC BY 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:240329_Kim_Chae-won_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-201393992": {
+   "title": "File:Le sserafim's Chae-Won in Tacoma (cropped).jpg",
+   "author": "David Lee",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_sserafim%27s_Chae-Won_in_Tacoma_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-sakura/commons-117773373": {
+   "title": "File:220428 Le Sserafim Sakura (1).jpg",
+   "author": "PlayIN",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:220428_Le_Sserafim_Sakura_(1).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-sakura/commons-133788419": {
+   "title": "File:20230630 Sakura (LE SSERAFIM).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230630_Sakura_(LE_SSERAFIM).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-sakura/commons-79165288": {
+   "title": "File:Sakura Miyawaki at Music Bank on April 12, 2019.png",
+   "author": "Nine Stars",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sakura_Miyawaki_at_Music_Bank_on_April_12,_2019.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-sakura/commons-134048487": {
+   "title": "File:20230707 LE SSERAFIM's Miyawaki Sakura airport departure 05.jpg",
+   "author": "https://youtube.com/@tenasia10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230707_LE_SSERAFIM%27s_Miyawaki_Sakura_airport_departure_05.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-sakura/commons-125035423": {
+   "title": "File:221013 Sakura (LE SSERAFIM) Airport Departure.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221013_Sakura_(LE_SSERAFIM)_Airport_Departure.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-yunjin/commons-133788418": {
+   "title": "File:20230630 Huh Yun-jin (LE SSERAFIM).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230630_Huh_Yun-jin_(LE_SSERAFIM).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-yunjin/commons-157744073": {
+   "title": "File:Huh Yunjin of Le Sserafim, January 10, 2025.png",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huh_Yunjin_of_Le_Sserafim,_January_10,_2025.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-yunjin/commons-121278275": {
+   "title": "File:Huh Yun-jin (LE SSERAFIM) 220624.jpg",
+   "author": "mang2goon",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huh_Yun-jin_(LE_SSERAFIM)_220624.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-yunjin/commons-128418246": {
+   "title": "File:221120 인기가요 미니팬미팅 르세라핌 허윤진 (7).jpg",
+   "author": "mang2goon",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221120_%EC%9D%B8%EA%B8%B0%EA%B0%80%EC%9A%94_%EB%AF%B8%EB%8B%88%ED%8C%AC%EB%AF%B8%ED%8C%85_%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C_%ED%97%88%EC%9C%A4%EC%A7%84_(7).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-yunjin/commons-117602789": {
+   "title": "File:181018—Huh Yun-jin 허윤진 Hera Seoul Fashion week.jpg",
+   "author": "NewsInstar",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:181018%E2%80%94Huh_Yun-jin_%ED%97%88%EC%9C%A4%EC%A7%84_Hera_Seoul_Fashion_week.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-kazuha/commons-129701998": {
+   "title": "File:221127 Kazuha (LE SSERAFIM).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221127_Kazuha_(LE_SSERAFIM).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-kazuha/commons-202817618": {
+   "title": "File:04112026 Kazuha pop-up store VIDIVICI 3.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:04112026_Kazuha_pop-up_store_VIDIVICI_3.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-kazuha/commons-150680341": {
+   "title": "File:Kazuha of Le Sserafim, April 5, 2024 (4).png",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazuha_of_Le_Sserafim,_April_5,_2024_(4).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-kazuha/commons-134048491": {
+   "title": "File:20230707 LE SSERAFIM's Nakamura Kazuha airport departure 07.jpg",
+   "author": "https://youtube.com/@tenasia10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230707_LE_SSERAFIM%27s_Nakamura_Kazuha_airport_departure_07.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-kazuha/commons-200731431": {
+   "title": "File:26052026 LE SSERAFIM Kazuha - Photocall @ CHANEL Métiers d'art 3.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:26052026_LE_SSERAFIM_Kazuha_-_Photocall_@_CHANEL_M%C3%A9tiers_d%27art_3.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-eunchae/commons-200774863": {
+   "title": "File:03032026 LESSERAFIM EUNCHAE Airport Departure 5.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:03032026_LESSERAFIM_EUNCHAE_Airport_Departure_5.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-eunchae/commons-125035422": {
+   "title": "File:221013 Hong Eun Chae (LE SSERAFIM) Airport Departure.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221013_Hong_Eun_Chae_(LE_SSERAFIM)_Airport_Departure.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-eunchae/commons-187517088": {
+   "title": "File:Easy Crazy Hot Tour in Seattle - le sserafim (54796820736).jpg",
+   "author": "David Lee from Redmond, WA, USA",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Easy_Crazy_Hot_Tour_in_Seattle_-_le_sserafim_(54796820736).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-eunchae/commons-147839086": {
+   "title": "File:220602 르세라핌 대면 팬사인회 홍은채.jpg",
+   "author": "MinguriLOVE0205",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:220602_%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C_%EB%8C%80%EB%A9%B4_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C_%ED%99%8D%EC%9D%80%EC%B1%84.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-eunchae/commons-157744204": {
+   "title": "File:Hong Eunchae of Le Sserafim, January 10, 2025.png",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hong_Eunchae_of_Le_Sserafim,_January_10,_2025.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-miyeon/commons-133928585": {
+   "title": "File:(G)I-DLE's Miyeon on June 2023.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE%27s_Miyeon_on_June_2023.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-miyeon/commons-148084451": {
+   "title": "File:20230911 (G)I-dle Amsterdam concert 072 Miyeon.jpg",
+   "author": "Robbie Klinkenberg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230911_(G)I-dle_Amsterdam_concert_072_Miyeon.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-miyeon/commons-95858565": {
+   "title": "File:Cho Mi-yeon in 2020 (3).png",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cho_Mi-yeon_in_2020_(3).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-miyeon/commons-135456125": {
+   "title": "File:20230802 Cho Miyeon 08.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230802_Cho_Miyeon_08.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-miyeon/commons-148084434": {
+   "title": "File:20230911 (G)I-dle Amsterdam concert 043 Miyeon.jpg",
+   "author": "Robbie Klinkenberg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230911_(G)I-dle_Amsterdam_concert_043_Miyeon.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-minnie/commons-170658510": {
+   "title": "File:(G)I-DLE Airport Departure 2024 Minnie heart gesture.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE_Airport_Departure_2024_Minnie_heart_gesture.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-minnie/commons-169777263": {
+   "title": "File:MINNIE (민니) - 2025.07.11 - P2.jpg",
+   "author": "티비텐 (TV10)",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:MINNIE_(%EB%AF%BC%EB%8B%88)_-_2025.07.11_-_P2.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-minnie/commons-193672537": {
+   "title": "File:Minnie at Owndays popup in Plaza Singapura 01 - RSKY - 20260611.jpg",
+   "author": "Robert Sim",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minnie_at_Owndays_popup_in_Plaza_Singapura_01_-_RSKY_-_20260611.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-minnie/commons-194773794": {
+   "title": "File:060426 Minnie departing from Incheon International Airpot 04.png",
+   "author": "TV10 / Ten Asia",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:060426_Minnie_departing_from_Incheon_International_Airpot_04.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-minnie/commons-133927513": {
+   "title": "File:(G)I-DLE's Minnie on June 2023.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE%27s_Minnie_on_June_2023.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-soyeon/commons-133928772": {
+   "title": "File:(G)I-DLE's Soyeon on June 2023.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE%27s_Soyeon_on_June_2023.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-soyeon/commons-148084458": {
+   "title": "File:20230911 (G)I-dle Amsterdam concert 077 Soyeon.jpg",
+   "author": "Robbie Klinkenberg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230911_(G)I-dle_Amsterdam_concert_077_Soyeon.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-soyeon/commons-202948446": {
+   "title": "File:06072026 SOYEON I-DLE SHOWCASE 4.png",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:06072026_SOYEON_I-DLE_SHOWCASE_4.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-soyeon/commons-152538901": {
+   "title": "File:Jeon Soyeon photo call 2024 01.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeon_Soyeon_photo_call_2024_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-soyeon/commons-160566603": {
+   "title": "File:(4K) (여자)아이들 소연의 반짝이는 순간...주얼리 여신 강림 I SOYEON PhotoCall 01.png",
+   "author": "https://www.youtube.com/@_TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(4K)_(%EC%97%AC%EC%9E%90)%EC%95%84%EC%9D%B4%EB%93%A4_%EC%86%8C%EC%97%B0%EC%9D%98_%EB%B0%98%EC%A7%9D%EC%9D%B4%EB%8A%94_%EC%88%9C%EA%B0%84...%EC%A3%BC%EC%96%BC%EB%A6%AC_%EC%97%AC%EC%8B%A0_%EA%B0%95%EB%A6%BC_I_SOYEON_PhotoCall_01.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-yuqi/commons-96066262": {
+   "title": "File:Yuqi at KBS MUSICBANK on March,1 2019 (1).png",
+   "author": "NewsInstar",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yuqi_at_KBS_MUSICBANK_on_March,1_2019_(1).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-yuqi/commons-133928469": {
+   "title": "File:(G)I-DLE's Yuqi on June 2023 03.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE%27s_Yuqi_on_June_2023_03.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-yuqi/commons-113275950": {
+   "title": "File:20210113—Song Yuqi 송우기 interview, Marie Claire Korea screenshot.jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20210113%E2%80%94Song_Yuqi_%EC%86%A1%EC%9A%B0%EA%B8%B0_interview,_Marie_Claire_Korea_screenshot.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-yuqi/commons-96127413": {
+   "title": "File:Yuqi at KBS MUSICBANK on July,18 2019 01.png",
+   "author": "NewsInstar",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yuqi_at_KBS_MUSICBANK_on_July,18_2019_01.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-yuqi/commons-129664947": {
+   "title": "File:Song Yuqi in 2023.png",
+   "author": "K-POPIT 케이팝잇 TV10",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Song_Yuqi_in_2023.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-shuhua/commons-133928206": {
+   "title": "File:(G)I-DLE's Shuhua on June 2023 01.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(G)I-DLE%27s_Shuhua_on_June_2023_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-shuhua/commons-199813408": {
+   "title": "File:Shuhua Yeh portrait at TIFF 2026.jpg",
+   "author": "K6ka",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shuhua_Yeh_portrait_at_TIFF_2026.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "idle-shuhua/commons-148084515": {
+   "title": "File:20230911 (G)I-dle Amsterdam concert 141 Shuhua.jpg",
+   "author": "Robbie Klinkenberg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230911_(G)I-dle_Amsterdam_concert_141_Shuhua.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-minji/commons-137032702": {
+   "title": "File:20230905 Minji (NewJeans).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230905_Minji_(NewJeans).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-minji/commons-157809372": {
+   "title": "File:Minji Olens 2024 FW 1.jpg",
+   "author": "OLensglobal",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minji_Olens_2024_FW_1.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-minji/commons-146023386": {
+   "title": "File:Newjeans Minji Marie Claire Korea.jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newjeans_Minji_Marie_Claire_Korea.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-minji/commons-122063750": {
+   "title": "File:Minji (NewJeans) 220812.jpg",
+   "author": "티비텐‎",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minji_(NewJeans)_220812.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hanni/commons-132708141": {
+   "title": "File:Newjeans Hanni 2023 10.jpg",
+   "author": "Marie Claire Korea",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newjeans_Hanni_2023_10.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hanni/commons-139111199": {
+   "title": "File:20230921 Newjeans Hanni 티비텐 01 (cropped).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230921_Newjeans_Hanni_%ED%8B%B0%EB%B9%84%ED%85%90_01_(cropped).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hanni/commons-148759344": {
+   "title": "File:Hanni OLENS 1.jpg",
+   "author": "Olensglobal",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanni_OLENS_1.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hanni/commons-137032700": {
+   "title": "File:20230905 Hanni (NewJeans).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230905_Hanni_(NewJeans).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hanni/commons-121436083": {
+   "title": "File:Hanni at Music Bank on August 4, 2022.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanni_at_Music_Bank_on_August_4,_2022.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-haerin/commons-121701011": {
+   "title": "File:Haerin (NewJeans) 220813.jpg",
+   "author": "SBS Radio",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haerin_(NewJeans)_220813.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-haerin/commons-137032707": {
+   "title": "File:20230905 Haerin (NewJeans).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230905_Haerin_(NewJeans).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-haerin/commons-141692540": {
+   "title": "File:2023 MMA NewJeans Haerin 1.jpg",
+   "author": "TenAsia",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_MMA_NewJeans_Haerin_1.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-haerin/commons-199112624": {
+   "title": "File:260907 Kang Haerin 42s.png",
+   "author": "Upload: K-POPIT 케이팝잇",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:260907_Kang_Haerin_42s.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-haerin/commons-144863570": {
+   "title": "File:Haerin Seoul Fashion Week 3.jpg",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haerin_Seoul_Fashion_Week_3.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hyein/commons-150828599": {
+   "title": "File:Hyein of NewJeans, July 26, 2024 (2).png",
+   "author": "티비텐",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyein_of_NewJeans,_July_26,_2024_(2).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hyein/commons-137032708": {
+   "title": "File:20230905 Hyein (NewJeans).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230905_Hyein_(NewJeans).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "newjeans-hyein/commons-122063749": {
+   "title": "File:Hyein (NewJeans) 220819.jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyein_(NewJeans)_220819.jpg",
    "source": "commons",
    "modified": "トリミング・回転・拡大縮小・背景除去"
   }

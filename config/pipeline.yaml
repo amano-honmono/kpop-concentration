@@ -33,6 +33,9 @@ detect:
   max_yaw: 25                  # 横向きの角度(度)の上限
   max_pitch: 25                # 上下の角度(度)の上限
   min_face_visible: 0.97       # 顔の楕円の中で、元画像の範囲内にある割合の下限(顔が画像の端で切れていないか)
+  # 元画像の縁がカードの中に入り、そこに人物が接している長さ(目の間隔を1とする)の上限。
+  # 顔ぎりぎりに切り抜かれた元画像だと、回転したときに縁がまっすぐな線や四角形として見えてしまう
+  max_edge_cut: 1.5
 
 align:
   size: 512                    # 書き出す正方形の一辺(px)
@@ -53,7 +56,11 @@ select:
   identity_threshold: 0.30     # 同じメンバーの他の画像との類似度(中央値)がこれ未満なら「別人の疑い」
   duplicate_similarity: 0.80   # 選んだ画像とこれ以上似ていたら「重複」(連写・同じ写真の別トリミングなど)
   duplicate_hash_distance: 1   # 顔の画像ハッシュの差がこれ以下なら「重複」(ほぼ同じ画像)
-  one_per_event: true          # まず同じ撮影(ファイル名から連番を除いた部分が同じもの)から1枚ずつ選び、足りなければ補う
+  # まず同じ撮影(イベント)から1枚ずつ選び、足りなければ補う。同じ撮影とみなすのは次のどれか:
+  # ファイル名から連番を除いた部分が同じ / 同じ作者でページIDの差が same_upload_window 以内 / 顔の類似度が same_event_similarity 以上
+  one_per_event: true
+  same_upload_window: 1000
+  same_event_similarity: 0.72
 
 export:
   webp_quality: 82

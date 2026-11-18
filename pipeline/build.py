@@ -38,6 +38,28 @@ def event_key(title: str) -> str:
     return re.sub(r"\s+", " ", s).strip() or title
 
 
+def _pageid(m: dict) -> int | None:
+    k = m["key"]
+    return int(k.split("-", 1)[1]) if k.startswith("commons-") and k.split("-", 1)[1].isdigit() else None
+
+
+def same_event(a: dict, b: dict, cfg: dict) -> bool:
+    """同じ撮影(イベント)の写真らしいか。ファイル名の付け方がばらばらなので、いくつかの手がかりを合わせる。
+
+    - ファイル名から連番を除いた部分が同じ
+    - 同じ作者が続けてアップロードしたもの(ページIDが近い)
+    - 顔がとても似ている(同じ日の同じメイク・照明だと高くなる)
+    """
+    title = lambda m: (m.get("credit") or {}).get("title") or m["file"]  # noqa: E731
+    if event_key(title(a)) == event_key(title(b)):
+        return True
+    pa, pb = _pageid(a), _pageid(b)
+    author = lambda m: (m.get("credit") or {}).get("author") or ""  # noqa: E731
+    if pa and pb and author(a) and author(a) == author(b) and abs(pa - pb) <= cfg.get("same_upload_window", 1000):
+        return True
+    return float(np.dot(a["embedding"], b["embedding"])) >= cfg.get("same_event_similarity", 0.72)
+
+
 def quality(meta: dict, settings: dict) -> float:
     m = meta["metrics"]
     res = min(m["eye_distance"] / 100, 1.0)                    # 解像度(元画像の目の間隔)
@@ -45,7 +67,9 @@ def quality(meta: dict, settings: dict) -> float:
     frontal = 1 - min(abs(m["yaw"]) / settings["detect"]["max_yaw"], 1.0)
     ident = meta.get("identity")
     ident = 0.5 if ident is None else max(min(ident, 1.0), 0.0)
-    return round(0.35 * res + 0.25 * sharp + 0.2 * frontal + 0.2 * ident, 4)
+    # 元画像の縁が少し写り込んでいるものは下げる(大きいものは process で除外済み)
+    cut = min(m.get("edge_cut", 0.0) / settings["detect"]["max_edge_cut"], 1.0)
+    return round(0.35 * res + 0.25 * sharp + 0.2 * frontal + 0.2 * ident - 0.1 * cut, 4)
 
 
 def select(metas: list[dict], excl: dict, settings: dict) -> list[dict]:
@@ -89,19 +113,15 @@ def select(metas: list[dict], excl: dict, settings: dict) -> list[dict]:
                 return c, sim
         return None
 
-    def source_group(m: dict) -> str:
-        return event_key((m.get("credit") or {}).get("title") or m["file"])
-
     chosen: list[dict] = []
     # 1周目は同じイベント(撮影)から1枚まで、2周目で残りを埋める。
     # 同じイベントの写真どうしは服や髪型が同じで、ペアが簡単に見つかってしまうため
     passes = (True, False) if cfg.get("one_per_event", True) else (False,)
     for diverse in passes:
-        used_groups = {source_group(c) for c in chosen}
         for m in pool:
             if m["decision"] is not None or len(chosen) >= cfg["max_per_member"]:
                 continue
-            if diverse and source_group(m) in used_groups and m["key"] not in include:
+            if diverse and m["key"] not in include and any(same_event(m, c, cfg) for c in chosen):
                 continue
             dup = duplicate_of(m, chosen)
             if dup:
@@ -111,7 +131,6 @@ def select(metas: list[dict], excl: dict, settings: dict) -> list[dict]:
             m["decision"] = "selected"
             chosen.append(m)
             m["rank"] = len(chosen)
-            used_groups.add(source_group(m))
     for m in pool:
         if m["decision"] is None:
             m["decision"] = "unused"
@@ -120,20 +139,30 @@ def select(metas: list[dict], excl: dict, settings: dict) -> list[dict]:
 
 def export_member(member_key: str, chosen: list[dict], settings: dict) -> list[dict]:
     out_dir = settings["paths"]["output"] / member_key
+    work = settings["paths"]["work"] / member_key
+    q = settings["export"]["webp_quality"]
+    images = [{
+        "key": m["key"],
+        **{mode: f"cards/{member_key}/{n}_{mode}.webp" for mode in ("full", "face")},
+        "credit": f"{member_key}/{m['key']}",
+    } for n, m in enumerate(chosen, 1)]
+
+    # 選んだ画像と加工結果が前回と同じなら、書き出しを省く(webp の圧縮に時間がかかるため)
+    signature = {"q": q, "images": [[m["key"], m.get("input_sha1"), m.get("settings_hash")] for m in chosen]}
+    sig_path = work / "export.json"
+    expected = [out_dir / f"{n}_{mode}.webp" for n in range(1, len(chosen) + 1) for mode in ("full", "face")]
+    if read_json(sig_path) == signature and all(p.exists() for p in expected) \
+            and len(list(out_dir.glob("*.webp"))) == len(expected):
+        return images
+
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
-    work = settings["paths"]["work"] / member_key
-    q = settings["export"]["webp_quality"]
-    images = []
     for n, m in enumerate(chosen, 1):
-        entry = {"key": m["key"]}
         for mode in ("full", "face"):
             with Image.open(work / m["key"] / f"{mode}.png") as im:
-                im.save(out_dir / f"{n}_{mode}.webp", "WEBP", quality=q, method=6)
-            entry[mode] = f"cards/{member_key}/{n}_{mode}.webp"
-        entry["credit"] = f"{member_key}/{m['key']}"
-        images.append(entry)
+                im.save(out_dir / f"{n}_{mode}.webp", "WEBP", quality=q, method=4)
+    write_json(sig_path, signature)
     return images
 
 

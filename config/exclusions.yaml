@@ -1,2 +1,133 @@
 # review.html で選んだ除外(exclude)と固定(include)。手で編集してもよい
 # キーはカードID、値は候補のID(review.html の各画像の下に表示)
+#
+# 2026-11-18 Claude が全員分の点検で除外したもの(理由はコメント)。review.html の「除外中(取り消す)」で戻せる
+blackpink-jennie:
+  exclude:
+  - commons-96559510    # 背景(赤い模様)が人物とつながって残る
+  - commons-96559506    # マイクで口元が隠れる(同じ撮影の 965595xx は背景が残るものが多い)
+  - commons-96559516    # 背景が残る
+  - commons-96559518    # 背景が残る
+  - commons-96559526    # 背景除去の失敗
+  - commons-96559534    # マイクで口元が隠れる
+  include:
+  - commons-79087178    # 別の撮影で背景がきれいに抜けている
+blackpink-lisa:
+  exclude:
+  - commons-199334309   # 髪のまわりに青いふちが残る
+  - commons-199334304   # 左に背景のかけらが残る
+  - commons-199334306   # 青い背景が残る
+  - commons-184824395   # 暗い背景が残る
+  include:
+  - commons-165861851   # 別の撮影で背景がきれいに抜けている
+blackpink-rose:
+  exclude:
+  - commons-181932711   # 暗く緑がかっている
+  - commons-181932725   # 暗く緑がかっていて、マイクがかかる
+aespa-giselle:
+  exclude:
+  - commons-164862751   # 左下に青い物体が残る
+aespa-winter:
+  exclude:
+  - commons-136505307   # 粗い(低解像度の拡大)
+  - commons-136505309   # 粗く、マイクがかかる
+ive-gaeul:
+  exclude:
+  - commons-136252281   # 暗くぼやけている
+ive-leeseo:
+  exclude:
+  - commons-197888600   # 緑の背景が残る
+idle-miyeon:
+  exclude:
+  - commons-148084410   # マイクで口元が隠れている
+  - commons-148084470   # 手とマイクで口元が隠れている
+  - commons-148084482   # 上に格子模様の背景が残る
+  - commons-148084487   # マイクで口元が隠れ、紫の背景が残る
+  - commons-148084404   # 紫の背景が残る
+  - commons-148084497   # 背景が残り、マイクがかかる
+  - commons-148084412   # マイクで口元が隠れる
+  - commons-148084403   # マイクで口元が隠れる
+  - commons-148084477   # 格子模様の背景が残る
+  include:
+  - commons-133928585   # 別の撮影で背景がきれいに抜けている
+idle-minnie:
+  exclude:
+  - commons-202948435   # ピンクの背景が残る(同じ撮影の 2029484xx はどれもピンクの背景が残る)
+  - commons-202948429
+  - commons-202948427
+  - commons-202948436
+  - commons-202948437
+  - commons-202948438
+  - commons-202948439
+  - commons-202948441
+  include:
+  - commons-170658510   # 別の撮影で背景がきれいに抜けている
+idle-shuhua:
+  exclude:
+  - commons-202559247   # 右に背景の物体が残る
+  - commons-202559241   # 左に背景の物体が残る
+  - commons-202559238   # 黒い背景が残る
+  - commons-202559236   # 黒い背景が残る
+  - commons-202948458   # ピンクの背景が残る(同じ撮影の 2029484xx はどれもピンクの背景が残る)
+  - commons-202948457
+  - commons-202948459
+  - commons-202948461
+  - commons-202948463
+  - commons-148084436   # 紫の背景が残る
+idle-soyeon:
+  exclude:
+  - commons-152538900   # 髪のまわりに黒い背景が残る
+idle-yuqi:
+  exclude:
+  - commons-148084441   # 帽子のまわりに黒い背景が残り、マイクで口元が隠れる
+  - commons-148084445   # マイクで口元が隠れている
+  - commons-148084438   # 帽子とマイクで顔が隠れる
+  - commons-148084440   # 帽子とマイクで顔が隠れる
+  - commons-148084444   # ステージの背景が残る
+  - commons-148084405   # ステージの背景が残る
+  - commons-148084505   # マイクで口元が隠れる
+  include:
+  - commons-96066262    # 別の撮影で背景がきれいに抜けている
+lesserafim-chaewon:
+  exclude:
+  - commons-123729760   # 緑がかって暗い
+lesserafim-kazuha:
+  exclude:
+  - commons-117810315   # マスクで顔の下半分が隠れている
+lesserafim-sakura:
+  exclude:
+  - commons-119350995   # 手で顔の片側が隠れている
+  - commons-154042079   # 左下に青い物体が残る
+lesserafim-yunjin:
+  exclude:
+  - commons-128418240   # マイクで口元が隠れている
+  - commons-187517183   # 本人との類似度がしきい値すれすれ(0.30〜0.35)で、背景も残っている
+newjeans-minji:
+  exclude:
+  - commons-122633847   # 手で頬が隠れ、マイクもかかる
+twice-chaeyoung:
+  exclude:
+  - commons-118491006   # 横向きが強く、face モードで顔の半分しか映らない
+  - commons-76534730    # ぼやけていて、髪が顔にかかる
+  - commons-48760914    # 髪が顔の半分にかかる
+  - commons-136725577   # 本人との類似度がしきい値すれすれ(0.345)
+twice-dahyun:
+  exclude:
+  - commons-50833462    # 粗い(低解像度の拡大)
+  - commons-118042617   # フードで顔の半分しか映らない
+twice-mina:
+  exclude:
+  - commons-50833478    # 粗い(低解像度の拡大)
+twice-momo:
+  exclude:
+  - commons-118491011   # 本人との類似度がしきい値すれすれ(0.30〜0.35)
+twice-nayeon:
+  exclude:
+  - commons-50833473    # 粗い(低解像度の拡大)
+  - commons-95562560    # 譜面台やマイクのアクリル板が残る
+twice-sana:
+  exclude:
+  - commons-59347790    # 髪が顔の半分にかかる
+twice-tzuyu:
+  exclude:
+  - commons-129004941   # 粗い(低解像度の拡大)

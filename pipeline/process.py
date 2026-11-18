@@ -16,7 +16,7 @@ from .config import Member
 from .faces import BROW_TOP, CHEEK_L, CHEEK_R, CHIN, FaceAnalyzer, yaw_from_points
 from .util import log, read_image, read_json, safe_key, save_rgb, save_rgba, sha1_file, sha1_json, warn, write_json
 
-PROCESS_VERSION = 1
+PROCESS_VERSION = 2
 IMAGE_EXT = (".jpg", ".jpeg", ".png", ".webp")
 
 
@@ -83,6 +83,35 @@ def ellipse_mask(pts: np.ndarray, size: int, eye_dist_px: float, cfg: dict) -> n
         k = cfg["feather"] * 2 + 1
         mask = cv2.GaussianBlur(mask, (k, k), 0)
     return mask
+
+
+def keep_subject(alpha: np.ndarray, seed: tuple[float, float]) -> np.ndarray:
+    """背景除去の結果から、顔(seed)とつながっている部分だけを残す(離れた背景のかけらを消す)。"""
+    binary = (alpha > 0.5).astype(np.uint8)
+    n, labels = cv2.connectedComponents(binary, connectivity=8)
+    if n <= 2:
+        return alpha
+    h, w = alpha.shape
+    label = labels[min(h - 1, max(0, int(seed[1]))), min(w - 1, max(0, int(seed[0])))]
+    if label == 0:  # 顔の位置が背景扱いなら、一番大きい部分を残す
+        counts = np.bincount(labels.ravel())
+        counts[0] = 0
+        label = int(counts.argmax())
+    keep = cv2.dilate((labels == label).astype(np.uint8), np.ones((5, 5), np.uint8))
+    return alpha * keep
+
+
+def edge_cut(valid: np.ndarray, alpha: np.ndarray, eye_dist_px: float) -> float:
+    """元画像の縁がカードの中に入っていて、そこに人物(か消し残した背景)が接している長さ(目の間隔を1とする)。
+
+    元画像が顔ぎりぎりで切り抜かれていると、回転したときに縁がまっすぐな線として見えてしまう。
+    肩から下は切れていて当たり前なので、カードの下 20% は数えない。
+    """
+    v = (valid > 0.5).astype(np.uint8)
+    inner = cv2.erode(v, np.ones((3, 3), np.uint8), borderType=cv2.BORDER_REPLICATE)
+    boundary = (v == 1) & (inner == 0)
+    boundary[int(valid.shape[0] * 0.8):, :] = False
+    return float((boundary & (alpha > 0.5)).sum()) / max(eye_dist_px, 1.0)
 
 
 def dhash(gray: np.ndarray) -> str:
@@ -167,6 +196,9 @@ def process_one(cand: dict, out_dir: Path, analyzer: FaceAnalyzer, bg: Backgroun
     full_rgb = cv2.warpAffine(rgb, m_full, (size, size), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_CONSTANT)
     full_valid = cv2.warpAffine(ones, m_full, (size, size), flags=cv2.INTER_LINEAR).astype(np.float32) / 255
     alpha = bg.alpha(full_rgb) * full_valid
+    alpha = keep_subject(alpha, (size / 2, al["full"]["eye_y"] * size))
+    cut = edge_cut(full_valid, alpha, al["full"]["eye_distance"] * size)
+    meta["metrics"]["edge_cut"] = round(cut, 2)
     save_rgba(out_dir / "full.png", np.dstack([full_rgb, (alpha * 255).round().astype(np.uint8)]))
 
     # face: 楕円で顔だけ残す(拡大して顔をカードいっぱいにする)
@@ -185,6 +217,8 @@ def process_one(cand: dict, out_dir: Path, analyzer: FaceAnalyzer, bg: Backgroun
     meta["embedding"] = [round(float(v), 5) for v in emb]
     if visible < det["min_face_visible"]:
         return reject(f"顔が画像の端で切れている({visible:.0%})")
+    if cut > det["max_edge_cut"]:
+        return reject(f"元画像の縁が写り込む({cut:.1f})")
     return meta
 
 
