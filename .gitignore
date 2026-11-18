@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 画像パイプラインのダウンロード・途中結果・モデル
+cache/
+work/
+raw/*
+!raw/.gitkeep
+
+# ゲーム
+node_modules/
+dist/

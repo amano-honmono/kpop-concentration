@@ -1,0 +1,97 @@
+# 出題するグループとメンバーの定義
+#
+# 確認日: 2026-11-18(Wikidata の「メンバー」(P527)と「Commons カテゴリ」(P373)をもとに作成)
+#
+# フィールド
+#   id               英小文字・数字のみ。カードのIDは「<グループid>-<メンバーid>」になる(例: twice-nayeon)
+#                    手動で画像を置くときのフォルダ: raw/<グループid>/<メンバーid>/*.jpg
+#                    書き出し先:               public/cards/<グループid>-<メンバーid>/
+#   name             表示名(ja / en / ko)。ゲームの画面では ja を表示し、en を小さく添える
+#   real_name        本名のローマ字表記。Commons のカテゴリで足りないときの検索キーワードに使う
+#   wikidata         Wikidata の項目ID(人物を確認するため)
+#   commons_category Wikimedia Commons のカテゴリ名(先頭の "Category:" は付けない)
+#   status           active(現メンバー)/ former(元メンバー)
+#   enabled          false にすると、画像処理もゲームでの出題もしない(省略時は true)
+
+version: 1
+
+groups:
+  - id: blackpink
+    name: { ja: ブラックピンク, en: BLACKPINK, ko: 블랙핑크 }
+    wikidata: Q25056945
+    members:
+      - { id: jisoo,  name: { ja: ジス,     en: Jisoo,  ko: 지수 }, real_name: Kim Ji-soo,      wikidata: Q27655361, commons_category: "Jisoo",                status: active }
+      - { id: jennie, name: { ja: ジェニー, en: Jennie, ko: 제니 }, real_name: Jennie Kim,      wikidata: Q26262599, commons_category: "Jennie Kim",           status: active }
+      - { id: rose,   name: { ja: ロゼ,     en: Rosé,   ko: 로제 }, real_name: Roseanne Park,   wikidata: Q27655344, commons_category: "Rosé Park",            status: active }
+      - { id: lisa,   name: { ja: リサ,     en: Lisa,   ko: 리사 }, real_name: Lalisa Manobal,  wikidata: Q26707663, commons_category: "Lisa (Thai vocalist)", status: active }
+
+  - id: twice
+    name: { ja: トゥワイス, en: TWICE, ko: 트와이스 }
+    wikidata: Q20645861
+    members:
+      - { id: nayeon,    name: { ja: ナヨン,     en: Nayeon,    ko: 나연 }, real_name: Im Na-yeon,      wikidata: Q22804243, commons_category: "Nayeon",          status: active }
+      - { id: jeongyeon, name: { ja: ジョンヨン, en: Jeongyeon, ko: 정연 }, real_name: Yoo Jeong-yeon,  wikidata: Q25374501, commons_category: "Jeongyeon",       status: active }
+      - { id: momo,      name: { ja: モモ,       en: Momo,      ko: 모모 }, real_name: Hirai Momo,      wikidata: Q23779926, commons_category: "Momo Hirai",      status: active }
+      - { id: sana,      name: { ja: サナ,       en: Sana,      ko: 사나 }, real_name: Minatozaki Sana, wikidata: Q23012025, commons_category: "Sana Minatozaki", status: active }
+      - { id: jihyo,     name: { ja: ジヒョ,     en: Jihyo,     ko: 지효 }, real_name: Park Ji-hyo,     wikidata: Q22774055, commons_category: "Park Ji-hyo",     status: active }
+      - { id: mina,      name: { ja: ミナ,       en: Mina,      ko: 미나 }, real_name: Myoi Mina,       wikidata: Q20688186, commons_category: "Mina Myoui",      status: active }
+      - { id: dahyun,    name: { ja: ダヒョン,   en: Dahyun,    ko: 다현 }, real_name: Kim Da-hyun,     wikidata: Q22773838, commons_category: "Dahyun",          status: active }
+      - { id: chaeyoung, name: { ja: チェヨン,   en: Chaeyoung, ko: 채영 }, real_name: Son Chae-young,  wikidata: Q24043625, commons_category: "Chaeyoung",       status: active }
+      - { id: tzuyu,     name: { ja: ツウィ,     en: Tzuyu,     ko: 쯔위 }, real_name: Chou Tzu-yu,     wikidata: Q20688219, commons_category: "Tzuyu",           status: active }
+
+  - id: aespa
+    name: { ja: エスパ, en: aespa, ko: 에스파 }
+    wikidata: Q100877982
+    members:
+      - { id: karina,   name: { ja: カリナ,     en: Karina,   ko: 카리나 }, real_name: Yu Ji-min,      wikidata: Q101161002, commons_category: "Karina (South Korean singer)", status: active }
+      - { id: giselle,  name: { ja: ジゼル,     en: Giselle,  ko: 지젤 },   real_name: Uchinaga Aeri,  wikidata: Q101161168, commons_category: "Giselle (singer)",             status: active }
+      - { id: winter,   name: { ja: ウィンター, en: Winter,   ko: 윈터 },   real_name: Kim Min-jeong,  wikidata: Q101161289, commons_category: "Winter (singer)",              status: active }
+      - { id: ningning, name: { ja: ニンニン,   en: Ningning, ko: 닝닝 },   real_name: Ning Yizhuo,    wikidata: Q101161499, commons_category: "Ningning",                     status: active }
+
+  - id: ive
+    name: { ja: アイヴ, en: IVE, ko: 아이브 }
+    wikidata: Q109375061
+    members:
+      - { id: yujin,    name: { ja: ユジン,   en: Yujin,    ko: 유진 }, real_name: An Yu-jin,      wikidata: Q55694622,  commons_category: "An Yu-jin",      status: active }
+      - { id: gaeul,    name: { ja: ガウル,   en: Gaeul,    ko: 가을 }, real_name: Kim Ga-eul,     wikidata: Q109420011, commons_category: "Gaeul",          status: active }
+      - { id: rei,      name: { ja: レイ,     en: Rei,      ko: 레이 }, real_name: Naoi Rei,       wikidata: Q109571132, commons_category: "Rei",            status: active }
+      - { id: wonyoung, name: { ja: ウォニョン, en: Wonyoung, ko: 원영 }, real_name: Jang Won-young, wikidata: Q56476186,  commons_category: "Jang Won-young", status: active }
+      - { id: liz,      name: { ja: リズ,     en: Liz,      ko: 리즈 }, real_name: Kim Ji-won,     wikidata: Q109420139, commons_category: "Liz",            status: active }
+      - { id: leeseo,   name: { ja: イソ,     en: Leeseo,   ko: 이서 }, real_name: Lee Hyun-seo,   wikidata: Q109572155, commons_category: "Leeseo",         status: active }
+
+  - id: lesserafim
+    name: { ja: ルセラフィム, en: LE SSERAFIM, ko: 르세라핌 }
+    wikidata: Q111381707
+    members:
+      - { id: chaewon, name: { ja: チェウォン, en: Kim Chaewon,  ko: 김채원 }, real_name: Kim Chae-won,     wikidata: Q56660174,  commons_category: "Kim Chae-won (vocalist, born 2000)", status: active }
+      - { id: sakura,  name: { ja: サクラ,     en: Sakura,       ko: 사쿠라 }, real_name: Miyawaki Sakura,  wikidata: Q869966,    commons_category: "Sakura Miyawaki",                   status: active }
+      - { id: yunjin,  name: { ja: ユンジン,   en: Huh Yunjin,   ko: 허윤진 }, real_name: Huh Yun-jin,      wikidata: Q111537648, commons_category: "Huh Yun-jin",                       status: active }
+      - { id: kazuha,  name: { ja: カズハ,     en: Kazuha,       ko: 카즈하 }, real_name: Nakamura Kazuha,  wikidata: Q111544446, commons_category: "Kazuha Nakamura",                   status: active }
+      - { id: eunchae, name: { ja: ウンチェ,   en: Hong Eunchae, ko: 홍은채 }, real_name: Hong Eun-chae,    wikidata: Q111544444, commons_category: "Hong Eun-chae",                     status: active }
+      # 2022年7月に脱退。Commons にカテゴリがないので、使う場合は raw/ に手動で画像を置く
+      - { id: garam,   name: { ja: ガラム,     en: Kim Garam,    ko: 김가람 }, real_name: Kim Ga-ram,       wikidata: Q111544443, status: former, enabled: false }
+
+  - id: idle
+    # 2025年5月に (G)I-DLE から i-dle に改名
+    name: { ja: アイドゥル, en: i-dle, ko: 아이들 }
+    aliases: ["(G)I-DLE"]
+    wikidata: Q51885404
+    members:
+      - { id: miyeon, name: { ja: ミヨン, en: Miyeon, ko: 미연 }, real_name: Cho Mi-yeon,      wikidata: Q56259927, commons_category: "Cho Mi-yeon",  status: active }
+      - { id: minnie, name: { ja: ミンニ, en: Minnie, ko: 민니 }, real_name: Nicha Yontararak, wikidata: Q56761923, commons_category: "Minnie",       status: active }
+      - { id: soyeon, name: { ja: ソヨン, en: Soyeon, ko: 소연 }, real_name: Jeon So-yeon,     wikidata: Q26707915, commons_category: "Jeon So-yeon", status: active }
+      - { id: yuqi,   name: { ja: ウギ,   en: Yuqi,   ko: 우기 }, real_name: Song Yuqi,        wikidata: Q55287306, commons_category: "Song Yuqi",    status: active }
+      - { id: shuhua, name: { ja: シュファ, en: Shuhua, ko: 슈화 }, real_name: Yeh Shu-hua,    wikidata: Q55287305, commons_category: "Yeh Shuhua",   status: active }
+      # 2021年に脱退
+      - { id: soojin, name: { ja: スジン, en: Soojin, ko: 수진 }, real_name: Seo Soo-jin,      wikidata: Q61100297, commons_category: "Seo Soo-jin",  status: former, enabled: false }
+
+  - id: newjeans
+    name: { ja: ニュージーンズ, en: NewJeans, ko: 뉴진스 }
+    wikidata: Q113189277
+    members:
+      - { id: minji,    name: { ja: ミンジ,   en: Minji,    ko: 민지 },   real_name: Kim Min-ji,     wikidata: Q113561403, commons_category: "Kim Min-ji (vocalist)", status: active }
+      - { id: hanni,    name: { ja: ハニ,     en: Hanni,    ko: 하니 },   real_name: Hanni Pham,     wikidata: Q113455973, commons_category: "Hanni (vocalist)",      status: active }
+      # Wikidata では 2025-12-29 にグループを離れたことになっている(ADOR が専属契約を解除)
+      - { id: danielle, name: { ja: ダニエル, en: Danielle, ko: 다니엘 }, real_name: Danielle Marsh, wikidata: Q113455624, commons_category: "Danielle Marsh",        status: former, enabled: false }
+      - { id: haerin,   name: { ja: ヘリン,   en: Haerin,   ko: 해린 },   real_name: Kang Hae-rin,   wikidata: Q113508917, commons_category: "Haerin (vocalist)",     status: active }
+      - { id: hyein,    name: { ja: ヘイン,   en: Hyein,    ko: 혜인 },   real_name: Lee Hye-in,     wikidata: Q113561413, commons_category: "Lee Hye-in",            status: active }

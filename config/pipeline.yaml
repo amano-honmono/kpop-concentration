@@ -1,0 +1,59 @@
+# 画像パイプラインの設定
+# 値を変えたら `python -m pipeline process` をもう一度実行する(加工に関わる値が変わった画像だけ作り直す)
+
+paths:
+  raw: raw                     # 手動で置く画像: raw/<グループid>/<メンバーid>/*.jpg
+  cache: cache                 # Commons からのダウンロードとモデル
+  work: work                   # 加工の途中結果と review.html
+  output: public/cards         # ゲームが読むカード画像と manifest.json
+
+commons:
+  max_depth: 2                 # カテゴリを何段下までたどるか
+  enough_files: 80             # 使える画像がこれだけ見つかったら、それ以上カテゴリをたどらない
+  max_candidates: 30           # 1人あたり何枚ダウンロードして候補にするか
+  # 取得するサムネイルの幅。Wikimedia の標準サイズ(500 / 960 / 1280 / 1920)から選ぶ。
+  # 元画像の直接ダウンロードは強く制限されているので使わない。元画像がこれより小さいときは一段下の標準サイズを使う
+  thumb_width: 1280
+  min_side: 400                # 短い辺がこれ未満の画像は使わない
+  # 許可するライセンス(Commons の機械可読ライセンス名の先頭一致)
+  licenses: [cc-by, cc-by-sa, pd, cc0]
+
+  # --- アクセスの速さ ---
+  # Wikimedia の上限(2026年〜): User-Agent に連絡先がないと 10回/分、連絡先(メールか URL)があると 200回/分。
+  # https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits
+  # API と画像のダウンロードを合わせた1分あたりの回数。user_agent に連絡先を入れたら 120 くらいまで上げてよい
+  requests_per_minute: 9
+  # 例: "kpop-concentration-pipeline/0.1 (you@example.com) bot"
+  user_agent: null
+
+detect:
+  min_score: 0.80              # 顔検出の信頼度の下限
+  other_face_ratio: 0.20       # 一番大きい顔の面積に対してこの割合以上の顔が他にあれば「複数の顔」として除外
+  min_eye_distance: 40         # 元画像での目の間隔(px)がこれ未満なら「顔が小さい」として除外
+  max_yaw: 25                  # 横向きの角度(度)の上限
+  max_pitch: 25                # 上下の角度(度)の上限
+  min_face_visible: 0.97       # 顔の楕円の中で、元画像の範囲内にある割合の下限(顔が画像の端で切れていないか)
+
+align:
+  size: 512                    # 書き出す正方形の一辺(px)
+  full: { eye_distance: 0.18, eye_y: 0.46 }   # 目の間隔と目の高さ(一辺に対する割合)。頭のてっぺんまで入るように
+  face: { eye_distance: 0.33, eye_y: 0.38 }
+
+face_mask:
+  width: 0.92                  # 頬の幅に対する楕円の横幅
+  forehead: 0.30               # 眉の上に残す額の高さ(目の間隔に対する割合)
+  feather: 6                   # 縁のぼかし(px)
+
+background:
+  model: u2net_human_seg       # rembg のモデル名
+
+select:
+  min_per_member: 2            # これ未満のメンバーは警告を出してスキップ
+  max_per_member: 5
+  identity_threshold: 0.30     # 同じメンバーの他の画像との類似度(中央値)がこれ未満なら「別人の疑い」
+  duplicate_similarity: 0.80   # 選んだ画像とこれ以上似ていたら「重複」(連写・同じ写真の別トリミングなど)
+  duplicate_hash_distance: 1   # 顔の画像ハッシュの差がこれ以下なら「重複」(ほぼ同じ画像)
+  one_per_event: true          # まず同じ撮影(ファイル名から連番を除いた部分が同じもの)から1枚ずつ選び、足りなければ補う
+
+export:
+  webp_quality: 82

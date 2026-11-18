@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カード画像の確認</title>
+<style>
+  :root {
+    --bg: #f6f5f3; --panel: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --line: #e3e1dd;
+    --chk-a: #ffffff; --chk-b: #e9e7e3;
+    --sel: #1f8a4c; --excl: #b3261e; --sus: #c56a00; --dup: #6d4bb8; --unused: #4a6fa5; --rej: #8a8a8e;
+    --accent: #d6336c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #18181b; --panel: #232327; --text: #ececef; --muted: #a0a0a8; --line: #36363c;
+      --chk-a: #2c2c31; --chk-b: #38383e;
+      --sel: #4cc47f; --excl: #f2756b; --sus: #f0a640; --dup: #a78bfa; --unused: #7ea6e0; --rej: #8e8e96;
+      --accent: #f06595;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.5 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; }
+  header { position: sticky; top: 0; z-index: 10; background: var(--panel); border-bottom: 1px solid var(--line);
+           padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  header h1 { font-size: 16px; margin: 0; }
+  header .meta { color: var(--muted); font-size: 12px; }
+  header .spacer { flex: 1; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 16px; }
+  nav a { color: var(--text); text-decoration: none; font-size: 12px; padding: 2px 8px; border: 1px solid var(--line);
+          border-radius: 999px; background: var(--panel); }
+  nav a.skipped { border-color: var(--excl); color: var(--excl); }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: var(--text);
+           border-radius: 6px; padding: 4px 10px; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.on-excl { background: var(--excl); border-color: var(--excl); color: #fff; }
+  button.on-incl { background: var(--sel); border-color: var(--sel); color: #fff; }
+  button:disabled { opacity: .5; cursor: default; }
+  label.toggle { font-size: 13px; display: inline-flex; gap: 4px; align-items: center; }
+  #notice { margin: 0 16px; padding: 8px 12px; border-radius: 6px; background: var(--panel); border: 1px solid var(--accent);
+            display: none; }
+  #notice textarea { width: 100%; height: 140px; font: 12px ui-monospace, Consolas, monospace; margin-top: 6px; }
+  main { padding: 8px 16px 48px; }
+  section.member { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin: 16px 0;
+                   padding: 12px 14px; }
+  section.member h2 { font-size: 16px; margin: 0 0 2px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+  section.member h2 small { color: var(--muted); font-weight: normal; font-size: 13px; }
+  .status-skipped { color: var(--excl); font-weight: bold; font-size: 13px; }
+  h3 { font-size: 13px; color: var(--muted); margin: 14px 0 6px; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .cand { border: 2px solid var(--line); border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 4px; }
+  .cand.selected { border-color: var(--sel); }
+  .cand.pending { outline: 2px dashed var(--accent); outline-offset: 2px; }
+  .imgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .imgs figure { margin: 0; }
+  .imgs img { width: 100%; aspect-ratio: 1; object-fit: contain; display: block; border-radius: 4px; background: var(--chk-b); }
+  .imgs .chk img { background: repeating-conic-gradient(var(--chk-a) 0 25%, var(--chk-b) 0 50%) 0 0 / 16px 16px; }
+  .imgs figcaption { font-size: 11px; color: var(--muted); text-align: center; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; color: #fff; border-radius: 4px; padding: 0 6px; }
+  .b-selected { background: var(--sel); } .b-excluded { background: var(--excl); } .b-suspect { background: var(--sus); }
+  .b-duplicate { background: var(--dup); } .b-unused { background: var(--unused); } .b-rejected { background: var(--rej); }
+  .row { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; font-size: 12px; }
+  .key { font-family: ui-monospace, Consolas, monospace; color: var(--muted); }
+  .note { font-size: 12px; }
+  .credit { font-size: 11px; color: var(--muted); overflow-wrap: anywhere; }
+  .credit a { color: inherit; }
+  .actions { display: flex; gap: 6px; margin-top: auto; padding-top: 4px; }
+  .rejgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+  .rej { font-size: 11px; color: var(--muted); }
+  .rej img { width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--chk-b); border-radius: 4px; display: block; }
+  .rej a { color: inherit; }
+  .empty { color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>カード画像の確認</h1>
+  <span class="meta" id="summary"></span>
+  <span class="spacer"></span>
+  <label class="toggle"><input type="checkbox" id="showRejected"> 条件を満たさなかった画像も表示</label>
+  <button class="primary" id="rebuild">選び直す</button>
+</header>
+<nav id="nav"></nav>
+<div id="notice"></div>
+<main id="main"></main>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById("data").textContent);
+  const SERVED = location.protocol.startsWith("http");
+  const LABEL = { selected: "選択", excluded: "除外(手動)", suspect: "別人の疑い", duplicate: "重複",
+                  unused: "予備", rejected: "条件外" };
+  const ORDER = { selected: 0, unused: 1, duplicate: 2, suspect: 3, excluded: 4, rejected: 5 };
+
+  // 除外・固定の状態(ページを開いた時点の exclusions.yaml から始める)
+  const state = {};
+  for (const [k, v] of Object.entries(DATA.exclusions || {}))
+    state[k] = { exclude: new Set(v.exclude || []), include: new Set(v.include || []) };
+  const st = (id) => (state[id] ||= { exclude: new Set(), include: new Set() });
+  let dirty = false;
+
+  const el = (tag, attrs = {}, ...kids) => {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+    }
+    for (const kid of kids) if (kid != null) e.append(kid);
+    return e;
+  };
+  const ver = (c) => "?v=" + (c.input_sha1 || "").slice(0, 8) + (c.settings_hash || "").slice(0, 6);
+  const fmt = (x, d = 2) => (x == null ? "–" : Number(x).toFixed(d));
+
+  function creditNode(c) {
+    const cr = c.credit || {};
+    const title = cr.sourceUrl ? el("a", { href: cr.sourceUrl, target: "_blank", rel: "noopener", text: cr.title || c.file })
+                               : document.createTextNode(cr.title || c.file);
+    return el("div", { class: "credit" }, title, ` · ${cr.author || "不明"} · ${cr.license || "不明"}`);
+  }
+
+  function candCard(m, c) {
+    const s = st(m.id);
+    const ex = s.exclude.has(c.key), inc = s.include.has(c.key);
+    const base = `${m.id}/${c.key}/`;
+    const card = el("div", { class: "cand " + c.decision + (((ex && c.decision !== "excluded") ||
+      (!ex && c.decision === "excluded") || (inc && c.decision !== "selected")) ? " pending" : "") });
+    card.append(el("div", { class: "imgs" },
+      el("figure", {}, el("img", { src: base + "src.jpg" + ver(c), loading: "lazy", alt: "" }), el("figcaption", { text: "元画像" })),
+      el("figure", { class: "chk" }, el("img", { src: base + "full.png" + ver(c), loading: "lazy", alt: "" }), el("figcaption", { text: "full" })),
+      el("figure", { class: "chk" }, el("img", { src: base + "face.png" + ver(c), loading: "lazy", alt: "" }), el("figcaption", { text: "face" }))));
+    const mt = c.metrics || {};
+    card.append(el("div", { class: "row" },
+      el("span", { class: "badge b-" + c.decision, text: LABEL[c.decision] + (c.rank ? ` #${c.rank}` : "") }),
+      inc ? el("span", { class: "badge b-selected", text: "固定" }) : null,
+      el("span", { class: "key", text: c.key })));
+    card.append(el("div", { class: "row" },
+      el("span", { text: `類似度 ${fmt(c.identity)}` }), el("span", { text: `品質 ${fmt(c.quality)}` }),
+      el("span", { text: `向き ${fmt(mt.yaw, 0)}°/${fmt(mt.pitch, 0)}°` }),
+      el("span", { text: `目の間隔 ${fmt(mt.eye_distance, 0)}px` }), el("span", { text: `拡大 ×${fmt(mt.upscale, 1)}` })));
+    if (c.note) card.append(el("div", { class: "note", text: c.note }));
+    card.append(creditNode(c));
+    const bEx = el("button", { class: ex ? "on-excl" : "", text: ex ? "除外中(取り消す)" : "除外" });
+    const bIn = el("button", { class: inc ? "on-incl" : "", text: inc ? "固定中(取り消す)" : "必ず使う" });
+    bEx.onclick = () => { ex ? s.exclude.delete(c.key) : (s.exclude.add(c.key), s.include.delete(c.key)); changed(); };
+    bIn.onclick = () => { inc ? s.include.delete(c.key) : (s.include.add(c.key), s.exclude.delete(c.key)); changed(); };
+    card.append(el("div", { class: "actions" }, bEx, bIn));
+    return card;
+  }
+
+  function render() {
+    const main = document.getElementById("main"), nav = document.getElementById("nav");
+    main.replaceChildren(); nav.replaceChildren();
+    const showRej = document.getElementById("showRejected").checked;
+    const members = DATA.review.members || [];
+    let nSel = 0, nCand = 0;
+    if (!members.length) main.append(el("p", { class: "empty", text: "まだ処理したメンバーがいません。" }));
+    for (const m of members) {
+      nSel += m.status === "ok" ? m.selected : 0; nCand += m.candidates.length;
+      nav.append(el("a", { href: "#" + m.id, class: m.status, text: `${m.name.ja} ${m.status === "ok" ? m.selected : "×"}` }));
+      const sec = el("section", { class: "member", id: m.id });
+      const ok = m.candidates.filter((c) => c.decision !== "rejected");
+      const rej = m.candidates.filter((c) => c.decision === "rejected");
+      sec.append(el("h2", {}, `${m.name.ja}`, el("small", { text: `${m.name.en} / ${m.name.ko} · ${m.group} · ${m.id}` }),
+        el("small", { text: `選択 ${m.selected} 枚 / 条件を満たした ${ok.length} 枚 / 候補 ${m.candidates.length} 枚` }),
+        m.status === "skipped" ? el("span", { class: "status-skipped", text: "画像が足りないのでスキップ中" }) : null));
+      ok.sort((a, b) => ORDER[a.decision] - ORDER[b.decision] || (a.rank || 99) - (b.rank || 99) || (b.quality || 0) - (a.quality || 0));
+      const grid = el("div", { class: "grid" });
+      ok.forEach((c) => grid.append(candCard(m, c)));
+      sec.append(ok.length ? grid : el("p", { class: "empty", text: "条件を満たした画像がありません。" }));
+      if (rej.length) {
+        sec.append(el("h3", { text: `条件を満たさなかった画像 ${rej.length} 枚` }));
+        if (showRej) {
+          const rg = el("div", { class: "rejgrid" });
+          for (const c of rej) {
+            const link = c.credit && c.credit.sourceUrl ? el("a", { href: c.credit.sourceUrl, target: "_blank", rel: "noopener", text: c.reason })
+                                                        : document.createTextNode(c.reason);
+            rg.append(el("div", { class: "rej" }, el("img", { src: `${m.id}/${c.key}/src.jpg` + ver(c), loading: "lazy", alt: "" }), link));
+          }
+          sec.append(rg);
+        } else {
+          const counts = {};
+          rej.forEach((c) => { const r = (c.reason || "").replace(/[((].*$/, ""); counts[r] = (counts[r] || 0) + 1; });
+          sec.append(el("p", { class: "empty", text: Object.entries(counts).map(([r, n]) => `${r} ${n}`).join(" / ") }));
+        }
+      }
+      main.append(sec);
+    }
+    document.getElementById("summary").textContent =
+      `${members.length} 人 · 選択 ${nSel} 枚 · 候補 ${nCand} 枚 · 生成 ${DATA.review.generatedAt || ""}`;
+  }
+
+  function toPlain() {
+    const out = {};
+    for (const [k, v] of Object.entries(state)) {
+      const e = [...v.exclude].sort(), i = [...v.include].sort();
+      if (e.length || i.length) out[k] = { exclude: e, include: i };
+    }
+    return out;
+  }
+
+  function toYaml(obj) {
+    const lines = ["# review.html で選んだ除外(exclude)と固定(include)"];
+    for (const [k, v] of Object.entries(obj)) {
+      lines.push(`${k}:`);
+      for (const f of ["exclude", "include"]) if (v[f].length) { lines.push(`  ${f}:`); v[f].forEach((x) => lines.push(`  - ${x}`)); }
+    }
+    return lines.join("\n") + "\n";
+  }
+
+  function notice(content) {
+    const n = document.getElementById("notice");
+    n.replaceChildren(...(Array.isArray(content) ? content : [content]));
+    n.style.display = "block";
+  }
+
+  async function changed() {
+    dirty = true;
+    render();
+    if (SERVED) {
+      const r = await fetch("api/exclusions", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(toPlain()) });
+      notice(r.ok ? "config/exclusions.yaml に保存しました。「選び直す」で反映します(点線の枠は反映待ち)。"
+                  : "保存に失敗しました。サーバーのログを見てください。");
+    } else {
+      const ta = el("textarea", { readonly: "" }); ta.value = toYaml(toPlain());
+      notice(["ファイルとして開いているので保存できません。下の内容を config/exclusions.yaml に貼り付けて、" +
+              "python -m pipeline build を実行してください(python -m pipeline review で開けば自動で保存されます)。", ta]);
+    }
+  }
+
+  document.getElementById("showRejected").onchange = render;
+  const rb = document.getElementById("rebuild");
+  if (!SERVED) rb.disabled = true;
+  rb.onclick = async () => {
+    rb.disabled = true; rb.textContent = "選び直しています…";
+    const r = await fetch("api/build", { method: "POST" });
+    if (r.ok) location.reload();
+    else { rb.disabled = false; rb.textContent = "選び直す"; notice("選び直しに失敗しました: " + (await r.text())); }
+  };
+  window.addEventListener("beforeunload", (e) => { if (dirty && !SERVED) e.preventDefault(); });
+  render();
+})();
+</script>
+</body>
+</html>

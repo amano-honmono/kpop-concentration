@@ -1,0 +1,304 @@
+{
+ "version": 1,
+ "generatedAt": "2026-11-18T14:39:58+09:00",
+ "groups": [
+  {
+   "id": "blackpink",
+   "name": {
+    "ja": "ブラックピンク",
+    "en": "BLACKPINK",
+    "ko": "블랙핑크"
+   },
+   "aliases": [],
+   "members": [
+    "blackpink-jisoo"
+   ]
+  },
+  {
+   "id": "twice",
+   "name": {
+    "ja": "トゥワイス",
+    "en": "TWICE",
+    "ko": "트와이스"
+   },
+   "aliases": [],
+   "members": [
+    "twice-nayeon"
+   ]
+  },
+  {
+   "id": "lesserafim",
+   "name": {
+    "ja": "ルセラフィム",
+    "en": "LE SSERAFIM",
+    "ko": "르세라핌"
+   },
+   "aliases": [],
+   "members": [
+    "lesserafim-chaewon"
+   ]
+  }
+ ],
+ "members": [
+  {
+   "id": "blackpink-jisoo",
+   "group": "blackpink",
+   "name": {
+    "ja": "ジス",
+    "en": "Jisoo",
+    "ko": "지수"
+   },
+   "images": [
+    {
+     "key": "commons-88913578",
+     "full": "cards/blackpink-jisoo/1_full.webp",
+     "face": "cards/blackpink-jisoo/1_face.webp",
+     "credit": "blackpink-jisoo/commons-88913578"
+    },
+    {
+     "key": "commons-91348029",
+     "full": "cards/blackpink-jisoo/2_full.webp",
+     "face": "cards/blackpink-jisoo/2_face.webp",
+     "credit": "blackpink-jisoo/commons-91348029"
+    },
+    {
+     "key": "commons-96558967",
+     "full": "cards/blackpink-jisoo/3_full.webp",
+     "face": "cards/blackpink-jisoo/3_face.webp",
+     "credit": "blackpink-jisoo/commons-96558967"
+    },
+    {
+     "key": "commons-79087776",
+     "full": "cards/blackpink-jisoo/4_full.webp",
+     "face": "cards/blackpink-jisoo/4_face.webp",
+     "credit": "blackpink-jisoo/commons-79087776"
+    },
+    {
+     "key": "commons-91348025",
+     "full": "cards/blackpink-jisoo/5_full.webp",
+     "face": "cards/blackpink-jisoo/5_face.webp",
+     "credit": "blackpink-jisoo/commons-91348025"
+    }
+   ]
+  },
+  {
+   "id": "twice-nayeon",
+   "group": "twice",
+   "name": {
+    "ja": "ナヨン",
+    "en": "Nayeon",
+    "ko": "나연"
+   },
+   "images": [
+    {
+     "key": "commons-59347783",
+     "full": "cards/twice-nayeon/1_full.webp",
+     "face": "cards/twice-nayeon/1_face.webp",
+     "credit": "twice-nayeon/commons-59347783"
+    },
+    {
+     "key": "commons-51182218",
+     "full": "cards/twice-nayeon/2_full.webp",
+     "face": "cards/twice-nayeon/2_face.webp",
+     "credit": "twice-nayeon/commons-51182218"
+    },
+    {
+     "key": "commons-48760915",
+     "full": "cards/twice-nayeon/3_full.webp",
+     "face": "cards/twice-nayeon/3_face.webp",
+     "credit": "twice-nayeon/commons-48760915"
+    },
+    {
+     "key": "commons-95562560",
+     "full": "cards/twice-nayeon/4_full.webp",
+     "face": "cards/twice-nayeon/4_face.webp",
+     "credit": "twice-nayeon/commons-95562560"
+    },
+    {
+     "key": "commons-50833473",
+     "full": "cards/twice-nayeon/5_full.webp",
+     "face": "cards/twice-nayeon/5_face.webp",
+     "credit": "twice-nayeon/commons-50833473"
+    }
+   ]
+  },
+  {
+   "id": "lesserafim-chaewon",
+   "group": "lesserafim",
+   "name": {
+    "ja": "チェウォン",
+    "en": "Kim Chaewon",
+    "ko": "김채원"
+   },
+   "images": [
+    {
+     "key": "commons-129701999",
+     "full": "cards/lesserafim-chaewon/1_full.webp",
+     "face": "cards/lesserafim-chaewon/1_face.webp",
+     "credit": "lesserafim-chaewon/commons-129701999"
+    },
+    {
+     "key": "commons-123729760",
+     "full": "cards/lesserafim-chaewon/2_full.webp",
+     "face": "cards/lesserafim-chaewon/2_face.webp",
+     "credit": "lesserafim-chaewon/commons-123729760"
+    },
+    {
+     "key": "commons-74263199",
+     "full": "cards/lesserafim-chaewon/3_full.webp",
+     "face": "cards/lesserafim-chaewon/3_face.webp",
+     "credit": "lesserafim-chaewon/commons-74263199"
+    },
+    {
+     "key": "commons-73595337",
+     "full": "cards/lesserafim-chaewon/4_full.webp",
+     "face": "cards/lesserafim-chaewon/4_face.webp",
+     "credit": "lesserafim-chaewon/commons-73595337"
+    },
+    {
+     "key": "commons-147086351",
+     "full": "cards/lesserafim-chaewon/5_full.webp",
+     "face": "cards/lesserafim-chaewon/5_face.webp",
+     "credit": "lesserafim-chaewon/commons-147086351"
+    }
+   ]
+  }
+ ],
+ "credits": {
+  "blackpink-jisoo/commons-88913578": {
+   "title": "File:Kim Ji-soo at Incheon Airport to Japan on October 05, 2018 (16).png",
+   "author": "Off The Page",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Ji-soo_at_Incheon_Airport_to_Japan_on_October_05,_2018_(16).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jisoo/commons-91348029": {
+   "title": "File:170517 Kim Ji-soo Blackpink 04.jpg",
+   "author": "D4cgrapher",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:170517_Kim_Ji-soo_Blackpink_04.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jisoo/commons-96558967": {
+   "title": "File:Jisoo at YG x UNICEF Walking Festival on May 14th, 2017 04.jpg",
+   "author": "ᴅᴇʟɪᴄᴀᴛᴏ",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jisoo_at_YG_x_UNICEF_Walking_Festival_on_May_14th,_2017_04.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jisoo/commons-79087776": {
+   "title": "File:(180819) Jisoo em um evento de fansign do Black Pink no Live Plaza da COEX em Seul 04.jpg",
+   "author": "Idol Hunter",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(180819)_Jisoo_em_um_evento_de_fansign_do_Black_Pink_no_Live_Plaza_da_COEX_em_Seul_04.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "blackpink-jisoo/commons-91348025": {
+   "title": "File:170517 Kim Ji-soo Blackpink 02.jpg",
+   "author": "D4cgrapher",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:170517_Kim_Ji-soo_Blackpink_02.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-nayeon/commons-59347783": {
+   "title": "File:Im Na-yeon at Lotte Family Concert on May 20, 2017 (4).jpg",
+   "author": "월아조운's",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Im_Na-yeon_at_Lotte_Family_Concert_on_May_20,_2017_(4).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-nayeon/commons-51182218": {
+   "title": "File:Im Na-yeon at a fanmeet in Jamsil, in May 2016 01.jpg",
+   "author": "147 Company",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Im_Na-yeon_at_a_fanmeet_in_Jamsil,_in_May_2016_01.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-nayeon/commons-48760915": {
+   "title": "File:Im Na-yeon at Cheer Up Showcase in April 2016.jpg",
+   "author": "SHAQ Photo",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Im_Na-yeon_at_Cheer_Up_Showcase_in_April_2016.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-nayeon/commons-95562560": {
+   "title": "File:Nayeon in SBS Radio (2020).png",
+   "author": "SBS Radio 에라오",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nayeon_in_SBS_Radio_(2020).png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "twice-nayeon/commons-50833473": {
+   "title": "File:Twice Nayeon at KCON 2016 LA fan engagement.jpg",
+   "author": "mduangdara from Midlothian, VA, United States",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Twice_Nayeon_at_KCON_2016_LA_fan_engagement.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-129701999": {
+   "title": "File:221127 Kim Chae-won (LE SSERAFIM).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:221127_Kim_Chae-won_(LE_SSERAFIM).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-123729760": {
+   "title": "File:Kim Chaewon LE SSERAFIM 220923.jpg",
+   "author": "MUSHROOM COMPANY",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Chaewon_LE_SSERAFIM_220923.jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-74263199": {
+   "title": "File:181029 IZ*ONE Chaewon 01.png",
+   "author": "조선팔도",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:181029_IZ*ONE_Chaewon_01.png",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-73595337": {
+   "title": "File:Kim Chae-won at Jamsil Baseball Stadium on October 06, 2018 (1).jpg",
+   "author": "Hey Day",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Chae-won_at_Jamsil_Baseball_Stadium_on_October_06,_2018_(1).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  },
+  "lesserafim-chaewon/commons-147086351": {
+   "title": "File:240329 Kim Chae-won (2).jpg",
+   "author": "K-POPIT 케이팝잇",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:240329_Kim_Chae-won_(2).jpg",
+   "source": "commons",
+   "modified": "トリミング・回転・拡大縮小・背景除去"
+  }
+ }
+}

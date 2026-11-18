@@ -1,0 +1,8 @@
+# 画像パイプライン(Python 3.10〜3.12。MediaPipe が 3.13 に対応していないため)
+mediapipe>=1.2
+rembg[cpu]>=2.0.69
+opencv-contrib-python>=4.8   # YuNet(顔検出)と SFace(顔の特徴量)を使う
+numpy>=1.26
+pillow>=10.0
+pyyaml>=6.0
+requests>=2.31
